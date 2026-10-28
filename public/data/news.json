@@ -1,0 +1,276 @@
+{
+  "articles": [
+    {
+      "id": "forvia-ai-leadership-20261014",
+      "url": "https://www.forvia.com/en/press/forvia-strengthens-ai-leadership-appointment-raphael-viard-executive-committee",
+      "title": "FORVIA 将 AI 负责人纳入集团执行委员会",
+      "summary": "FORVIA 宣布首席数字与人工智能官 Raphaël Viard 加入执行委员会，推动数字、数据和 AI 能力在创新、工业运营及决策中的应用。这是集团治理动向，不能据此推断座椅工厂已完成 AI 部署。",
+      "category": "整椅",
+      "relatedCategories": [],
+      "aiRelation": "direct",
+      "sourceName": "FORVIA 官方",
+      "publishedAt": "2026-10-14",
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "原文日期 14th October 2026；正文明确 AI 职务、执委会任命及规模化方向。属于集团级 AI 治理，不是座椅量产成效。",
+      "tags": [
+        "企业动态",
+        "AI治理",
+        "数字化"
+      ]
+    },
+    {
+      "id": "forvia-adaptive-seating-20260910",
+      "url": "https://www.forvia.com/en/press/major-awards-geely-chery-and-industry-leaders-recognize-forvia-chinas-innovation-excellence",
+      "title": "FORVIA 披露自适应座椅与 Transformer Seat 获奖进展",
+      "summary": "FORVIA 的中国创新回顾提到，自适应座椅系统于 2026 年 5 月获 EAC Smart Glory Award，Transformer Seat 获中法合作奖。原文强调舒适、个性化与交互，没有披露具体 AI 模型或量产覆盖。",
+      "category": "整椅",
+      "relatedCategories": [
+        "骨架",
+        "执行器"
+      ],
+      "aiRelation": "enabling",
+      "sourceName": "FORVIA 官方",
+      "publishedAt": "2026-09-10",
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "原文发布日期 10th September 2026；EAC 奖事件日期 May 28, 2026，Transformer 奖 May 29, 2026。智能座椅并不自动等于 AI。",
+      "tags": [
+        "自适应座椅",
+        "座舱交互",
+        "技术进展"
+      ]
+    },
+    {
+      "id": "lectra-ai-leather-20260729",
+      "url": "https://www.lectra.com/en/library/shape-the-future-of-automotive-leather-cutting-with-ai",
+      "title": "Lectra：用 AI 缺陷检测改进汽车真皮裁剪",
+      "summary": "Lectra 介绍基于真实生产数据训练的自动缺陷检测方案，结合视觉技术与皮革工艺经验，支持皮张评估、质量判定一致性和裁剪决策。文章没有给出可直接套用到本企业的节材比例。",
+      "category": "面套",
+      "relatedCategories": [],
+      "aiRelation": "direct",
+      "sourceName": "Lectra 官方",
+      "publishedAt": "2026-07-29",
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "正文核实 AI-driven automatic defect detection；发布日期由同站官方相关文章卡片 Published on July 29, 2026 交叉确认。",
+      "tags": [
+        "机器视觉",
+        "真皮裁剪",
+        "缺陷检测"
+      ]
+    },
+    {
+      "id": "komax-b300-quality-20260422",
+      "url": "https://www.komaxgroup.com/en/stories/strip-series-b300-now-features-intelligent-quality-control",
+      "title": "Komax B300 剥线设备增加自适应质量控制",
+      "summary": "Komax 介绍 B300 系列的导体检测与切入控制：监测剥线过程，自动示教并补偿线径公差。原文重点应用是医疗、航空等高要求场景；对座椅线束属于可借鉴工艺，尚不能认定已用于座椅产线，也未证明使用机器学习。",
+      "category": "线束",
+      "relatedCategories": [],
+      "aiRelation": "adjacent",
+      "sourceName": "Komax 官方",
+      "publishedAt": "2026-04-22",
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "原文 April 22, 2026；明确 Automatic Conductor Detection 和 Adaptive Incision Control；没有 AI/ML 模型证据，故标相邻工艺。",
+      "tags": [
+        "自适应工艺",
+        "质量控制",
+        "剥线"
+      ]
+    },
+    {
+      "id": "magna-ai-manufacturing-20260128",
+      "url": "https://www.magna.com/stories/blog/2026/ai-at-work--5-ways-magna-is-reimagining-manufacturing",
+      "title": "Magna 公开五类制造 AI 应用，视觉检测覆盖座椅材料",
+      "summary": "Magna 的制造技术文章介绍机器视觉、设备状态监测、移动机器人、能源分析与工厂协同。视觉检测部分明确提及座椅材料的表面异常识别与缺陷分级；其余做法为集团级制造应用。",
+      "category": "面套",
+      "relatedCategories": [
+        "骨架",
+        "整椅"
+      ],
+      "aiRelation": "direct",
+      "sourceName": "Magna 官方",
+      "publishedAt": "2026-01-28",
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "原文 January 28, 2026；AI Vision Inspection 段落明确 seating materials。推广到冲压、焊接等是原文所述扩展方向，不等于每家工厂已部署。",
+      "tags": [
+        "机器视觉",
+        "预测维护",
+        "智能制造"
+      ]
+    },
+    {
+      "id": "infineon-flex-zcu-20260102",
+      "url": "https://www.infineon.com/technology-news/2025/infatv202601-038",
+      "title": "英飞凌与 Flex 发布区域控制器开发套件",
+      "summary": "两家公司介绍面向软件定义汽车的模块化区域控制器开发套件，组合 MCU、电源、功率开关与电机控制等构建块。它为座舱电气集成提供架构参考；原文没有说明座椅 AI 算法或座椅专用量产项目。",
+      "category": "控制器",
+      "relatedCategories": [
+        "开关",
+        "电机",
+        "线束"
+      ],
+      "aiRelation": "adjacent",
+      "sourceName": "Infineon 官方",
+      "publishedAt": "2026-01-02",
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "正文日期 Jan 02, 2026；URL 中的 /2025/ 不作为发布日期。原文明确区域控制器、安全数据路由、功率开关、电机控制构建块。",
+      "tags": [
+        "区域控制器",
+        "电子电气架构",
+        "电机控制"
+      ]
+    },
+    {
+      "id": "basf-transys-foam-20251105",
+      "url": "https://www.basf.com/global/en/media/news-releases/2025/11/apac-25-138",
+      "title": "BASF 与现代坦迪斯推出 TPU 超临界发泡模块化概念座椅",
+      "summary": "双方展示面向 PBV 的模块化概念座椅，在头枕和扶手中使用 Elastollan TPU 与超临界流体注射发泡工艺。它属于材料与发泡技术进展，原文没有 AI 应用证据，也不代表量产发布。",
+      "category": "发泡",
+      "relatedCategories": [
+        "整椅",
+        "核心件"
+      ],
+      "aiRelation": "adjacent",
+      "sourceName": "BASF 官方",
+      "publishedAt": "2025-11-05",
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "原文 November 5, 2025；明确 modular concept seat、headrest and armrest；不是 AI 项目且为概念座椅。",
+      "tags": [
+        "TPU",
+        "超临界发泡",
+        "概念座椅"
+      ]
+    },
+    {
+      "id": "brose-smart-cockpit-20250421",
+      "url": "https://www.brose.com/de-en/press/brose-unveils-key-innovations-to-power-the-future-of-the-automotive-industry.html",
+      "title": "历史资料｜Brose 展示座椅结构、机电控制与智能座舱组合",
+      "summary": "Brose 在 2025 上海车展介绍智能座舱、48V 系统，以及与 Brose Sitech 联合展示的整椅和座椅结构方案，包括零重力机构、触觉反馈、加热和气动按摩。智能机电集成未必使用 AI。",
+      "category": "骨架",
+      "relatedCategories": [
+        "整椅",
+        "电机",
+        "执行器",
+        "核心件"
+      ],
+      "aiRelation": "enabling",
+      "sourceName": "Brose 官方",
+      "publishedAt": "2025-04-21",
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "原文 Shanghai, 04-21-2025，超过最近12个月窗口，必须标历史资料。48V风扇和车窗电机量产不等于座椅48V方案量产。",
+      "tags": [
+        "座椅骨架",
+        "零重力",
+        "机电集成"
+      ]
+    },
+    {
+      "id": "infineon-seat-control-reference",
+      "url": "https://www.infineon.com/application/automotive-seat-control",
+      "title": "技术参考｜座椅电控中的电机驱动与功率开关",
+      "summary": "英飞凌的座椅控制应用页列出系统供电与通信、电机控制 IC 和高边功率开关等器件组合，覆盖舒适与安全功能设计。页面未标发布日期；作为电控基础资料收录，不能视为今日新品或 AI 新闻。",
+      "category": "控制器",
+      "relatedCategories": [
+        "电机",
+        "开关",
+        "核心件"
+      ],
+      "aiRelation": "enabling",
+      "sourceName": "Infineon 官方",
+      "publishedAt": null,
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "原文技术应用页，未确认发布日期。OPTIREG SBC、MOTIX DC motor control、PROFET high side power switches 可由 Overview 核对。",
+      "tags": [
+        "座椅控制",
+        "直流电机",
+        "功率开关"
+      ]
+    },
+    {
+      "id": "hyundai-intelligent-seat-reference",
+      "url": "https://www.hyundai-transys.com/en/innovation/seat/intelligent.do",
+      "title": "技术参考｜现代坦迪斯的 AI 自适应座椅研究方向",
+      "summary": "现代坦迪斯介绍利用乘员体态信息、网络连接与 AI 研究自适应舒适，并讨论多自由度骨架、扶手控制模块和触摸交互。原文多次使用未来、研究和开发措辞，不能作为已量产产品的证明。",
+      "category": "整椅",
+      "relatedCategories": [
+        "骨架",
+        "执行器",
+        "开关",
+        "控制器"
+      ],
+      "aiRelation": "direct",
+      "sourceName": "Hyundai Transys 官方",
+      "publishedAt": null,
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "原文明确 artificial intelligence；同时有 future-oriented、we are developing、we are studying，发布日期未知。技术愿景与研发方向，不推断量产。",
+      "tags": [
+        "自适应舒适",
+        "AI研发",
+        "人机交互"
+      ]
+    },
+    {
+      "id": "lear-intu-reference",
+      "url": "https://www.lear.com/technology/seating/advanced-seating-innovation/intu",
+      "title": "技术参考｜Lear INTU 通过感知与个性化控制改善座椅体验",
+      "summary": "Lear 的 INTU 页面介绍乘员需求识别、动态腰托与侧翼调节、传感与分区热舒适；热舒适部分提及学习乘员偏好。未见发布日期，也未披露算法结构或可独立核验的节能效果。",
+      "category": "整椅",
+      "relatedCategories": [
+        "核心件",
+        "执行器",
+        "控制器"
+      ],
+      "aiRelation": "enabling",
+      "sourceName": "Lear 官方",
+      "publishedAt": null,
+      "collectedAt": "2026-10-28T07:34:57.427Z",
+      "evidenceNote": "官方产品页无发布日期；有 learning occupant preferences，但未据此强称具体机器学习方案。按智能化基础/产品资料呈现。",
+      "tags": [
+        "乘员感知",
+        "个性化控制",
+        "热舒适"
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "runId": "daily-2026-10-28-1000",
+      "startedAt": "2026-10-28T07:35:25.974Z",
+      "completedAt": "2026-10-28T07:38:11.324Z",
+      "status": "partial",
+      "addedCount": 0,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403；限定域名搜索未取得可进一步核验的窗口内相关原文。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 未返回可读正文；限定域名搜索未取得可核验的窗口内新闻。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 无法访问；替代官方产品新闻和公司新闻入口仅返回JavaScript应用提示，未能读取新闻列表。",
+        "Magna：官方Stories与News页面可访问，但正文提取未呈现动态新闻条目，无法完整核查其最新列表。",
+        "Infineon：配置入口https://www.infineon.com/news 返回404；已通过限定域名搜索读取其他官方原文进行补查。",
+        "GRAMMER：配置入口https://www.grammer.com/en/company/newsroom/ 无法访问；已读取替代官方新闻列表https://www.grammer.com/en/press-releases/。"
+      ],
+      "note": "按北京时间2026-10-28，重点检查最近48小时，并补查2026-10-21至2026-10-28的原始发布。已实际读取超过5家独立企业的官方新闻列表及候选原文，覆盖十类座椅产业环节的配置来源；本次未确认符合全部入库条件的新增资讯。已排除用户提供的已收录URL。主要排除项：Brose采购与数字化部门调整原文日期为06-09-2026，超出时间窗；Lectra代理式AI白皮书讨论时尚行业，缺少具体座椅面套应用证据，且原文显示编辑日期，未将其当作原始发布日期；Infineon近期GaN、900V开关及Physical AI加速器发布虽在时间窗内，但原文未提供具体座椅应用或座椅工艺关联，不强行归入座椅开关、控制器或电机。BASF窗口内可见发布涉及财务、表面活性剂及化妆品，未发现座椅发泡或面套技术新增。结论置信度：中；部分站点受访问或动态内容限制，空结果仅代表本次可核验范围，不能证明全部配置来源均无新增。未执行命令、写文件、发布、登录或对外发送。 本机复核13家来源，接收0条，拒绝或失败6项；未发现合格新增时保留此前资料。"
+    },
+    {
+      "runId": "migration-seed-2026-10-28",
+      "startedAt": "2026-10-28T07:34:57.427Z",
+      "completedAt": "2026-10-28T07:34:57.427Z",
+      "status": "success",
+      "addedCount": 11,
+      "checkedSources": 9,
+      "failures": [],
+      "note": "从已核实的原站点内容快照迁入；这是历史初始化，不是本日新增采集。"
+    }
+  ],
+  "settings": {
+    "schedule": {
+      "enabled": false,
+      "time": "10:00",
+      "timezone": "Asia/Shanghai",
+      "mode": "local",
+      "verified": false
+    },
+    "lastSuccessfulCollectionAt": "2026-10-28T07:38:11.324Z"
+  },
+  "generatedAt": "2026-10-28T07:38:11.324Z",
+  "publication": {
+    "dataVersion": "da1983c858aacd382838ef8dce1e6961f51c4d3b0e655394a6753e761b6aedfe"
+  }
+}

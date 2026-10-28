@@ -1,0 +1,10 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import {ROOT,readJson,validateArticle,validateData,exportData,chinaDate} from './news-lib.mjs';
+const [source]=process.argv.slice(2);if(!source)throw Error('Usage: node scripts/init-data.mjs <existing verified news snapshot.json>');
+if(await readJson(path.join(ROOT,'data/news.json'),{optional:true}))throw Error('Existing canonical data is preserved; init-data cannot overwrite it');
+const imported=await readJson(path.resolve(source)),sources=await readJson(path.join(ROOT,'config/sources.json'));
+const now=new Date(),raw=Array.isArray(imported)?imported:imported.articles;
+if(!Array.isArray(raw))throw Error('Expected an article array or {articles,...} dataset');
+const data={articles:raw.map(a=>validateArticle(a,{sources,now})),runs:Array.isArray(imported.runs)?imported.runs:[{runId:`migration-seed-${chinaDate()}`,startedAt:now.toISOString(),completedAt:now.toISOString(),status:'success',addedCount:raw.length,checkedSources:new Set(raw.map(a=>new URL(a.url).hostname.replace(/^www\./,''))).size,failures:[],note:'从已核实的原站点内容快照迁入；这是历史初始化，不是本日新增采集。'}],settings:{schedule:{enabled:false,time:'10:00',timezone:'Asia/Shanghai',mode:'local',verified:false},lastSuccessfulCollectionAt:imported.settings?.lastSuccessfulCollectionAt??null},generatedAt:now.toISOString()};
+validateData(data,sources);const version=await exportData(data);console.log(JSON.stringify({initialized:true,articles:data.articles.length,dataVersion:version}));

@@ -1,0 +1,29 @@
+{
+  "type":"object",
+  "additionalProperties":false,
+  "required":["status","note","checkedSourceUrls","failures","articles"],
+  "properties":{
+    "status":{"type":"string","enum":["success","partial","failed"]},
+    "note":{"type":"string","maxLength":1600},
+    "checkedSourceUrls":{"type":"array","maxItems":100,"items":{"type":"string"}},
+    "failures":{"type":"array","maxItems":50,"items":{"type":"string","maxLength":500}},
+    "articles":{"type":"array","maxItems":60,"items":{
+      "type":"object","additionalProperties":false,
+      "required":["title","summary","category","relatedCategories","aiRelation","sourceName","url","publishedAt","evidenceNote","tags","evidenceQuote","dateEvidenceQuote"],
+      "properties":{
+        "title":{"type":"string","maxLength":180},
+        "summary":{"type":"string","maxLength":1600},
+        "category":{"type":"string","enum":["整椅","骨架","核心件","电机","执行器","发泡","面套","线束","开关","控制器"]},
+        "relatedCategories":{"type":"array","maxItems":9,"items":{"type":"string","enum":["整椅","骨架","核心件","电机","执行器","发泡","面套","线束","开关","控制器"]}},
+        "aiRelation":{"type":"string","enum":["direct","enabling","adjacent"]},
+        "sourceName":{"type":"string","maxLength":100},
+        "url":{"type":"string","maxLength":2048},
+        "publishedAt":{"type":["string","null"]},
+        "evidenceNote":{"type":"string","maxLength":1600},
+        "tags":{"type":"array","maxItems":8,"items":{"type":"string","maxLength":50}},
+        "evidenceQuote":{"type":"string","maxLength":220},
+        "dateEvidenceQuote":{"type":"string","maxLength":180}
+      }
+    }}
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {"name":"FORVIA","domain":"forvia.com","url":"https://www.forvia.com/en/press","focus":["整椅","骨架","核心件","控制器"]},
+  {"name":"Magna","domain":"magna.com","url":"https://www.magna.com/stories","focus":["整椅","骨架","面套"]},
+  {"name":"Lear","domain":"lear.com","url":"https://www.lear.com/newsroom","focus":["整椅","核心件","执行器","线束","控制器"]},
+  {"name":"Adient","domain":"adient.com","url":"https://www.adient.com/media/news/","focus":["整椅","骨架","面套"]},
+  {"name":"Brose","domain":"brose.com","url":"https://www.brose.com/de-en/press/press-releases/","focus":["骨架","电机","执行器","核心件"]},
+  {"name":"GRAMMER","domain":"grammer.com","url":"https://www.grammer.com/en/company/newsroom/","focus":["整椅","核心件"]},
+  {"name":"Toyota Boshoku","domain":"toyota-boshoku.com","url":"https://www.toyota-boshoku.com/global/news/","focus":["整椅","发泡","面套"]},
+  {"name":"Hyundai Transys","domain":"hyundai-transys.com","url":"https://www.hyundai-transys.com/en/","focus":["整椅","骨架","执行器","控制器"]},
+  {"name":"BASF","domain":"basf.com","url":"https://www.basf.com/global/en/media/news-releases","focus":["发泡","面套"]},
+  {"name":"Covestro","domain":"covestro.com","url":"https://www.covestro.com/press/","focus":["发泡","面套"]},
+  {"name":"Lectra","domain":"lectra.com","url":"https://www.lectra.com/en/library","focus":["面套"]},
+  {"name":"Komax","domain":"komaxgroup.com","url":"https://www.komaxgroup.com/en/stories","focus":["线束"]},
+  {"name":"Infineon","domain":"infineon.com","url":"https://www.infineon.com/news","focus":["电机","开关","控制器"]},
+  {"name":"Texas Instruments","domain":"ti.com","url":"https://www.ti.com/about-ti/newsroom.html","focus":["电机","开关","控制器"]},
+  {"name":"Johnson Electric","domain":"johnsonelectric.com","url":"https://www.johnsonelectric.com/en/news-and-events","focus":["电机","执行器","开关"]},
+  {"name":"Buehler Motor","domain":"buehlermotor.com","url":"https://www.buehlermotor.com/","focus":["电机","执行器"]}
+]

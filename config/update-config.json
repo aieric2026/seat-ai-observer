@@ -1,0 +1,13 @@
+{
+  "timezone": "Asia/Shanghai",
+  "time": "10:00",
+  "historyBackfillDays": 7,
+  "maxArticlesPerRun": 60,
+  "maxStoredArticles": 10000,
+  "minCheckedSources": 3,
+  "researchTimeoutMinutes": 30,
+  "sourceTimeoutSeconds": 25,
+  "deploymentTimeoutMinutes": 15,
+  "repository": "",
+  "pagesUrl": ""
+}
