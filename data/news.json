@@ -1,6 +1,77 @@
 {
   "articles": [
     {
+      "id": "n_683a10285f3e86ea1e334fff",
+      "url": "https://www.infineon.com/technology-news/2026/inftn202610-018",
+      "title": "英飞凌推出LinearFET，面向汽车固态配电",
+      "summary": "LinearFET在MOSFET层面处理并联均流、电容负载充电和短路鲁棒性问题。对座椅的潜在意义是为区域供电及座椅控制器上游电源保护提供器件评估方向。",
+      "category": "开关",
+      "relatedCategories": [
+        "控制器",
+        "线束"
+      ],
+      "aiRelation": "enabling",
+      "sourceName": "Infineon",
+      "publishedAt": "2026-10-27",
+      "collectedAt": "2026-10-28T08:07:38.158Z",
+      "evidenceNote": "原文明示产品已可供应，应用包括配电单元、固态保险及区域电源架构；没有座椅客户、座椅部署或量产验证证据。座椅供电关联为工程推断，置信度中；发布及供货表述置信度高。正文末尾的AI展会介绍不能证明LinearFET自身采用AI，也不构成集团AI治理证据。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "固态配电",
+        "MOSFET",
+        "区域架构",
+        "电源保护",
+        "已宣布可供应",
+        "座椅关联为推断"
+      ]
+    },
+    {
+      "id": "n_3cc7cf388f2ceca331104d97",
+      "url": "https://www.infineon.com/technology-news/2026/inftn202610-020",
+      "title": "英飞凌扩展OptiMOS 7汽车功率器件",
+      "summary": "新增TOLL封装汽车MOSFET面向12V和48V功率系统，原文列出电机驱动用途。座椅电机驱动级可据此评估导通损耗、散热与封装需求，但尚无座椅应用证明。",
+      "category": "电机",
+      "relatedCategories": [
+        "执行器",
+        "开关",
+        "控制器"
+      ],
+      "aiRelation": "adjacent",
+      "sourceName": "Infineon",
+      "publishedAt": "2026-10-27",
+      "collectedAt": "2026-10-28T08:07:38.158Z",
+      "evidenceNote": "原文明示器件已可供应，目标为高功率12V及48V应用；未说明适用于某款座椅电机，也未提供座椅测试或客户量产数据。座椅驱动级选型价值属于工程推断，置信度中；不应将高功率汽车应用直接等同于座椅适配。末尾AI展会宣传不构成该器件采用AI的证据。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "汽车MOSFET",
+        "OptiMOS 7",
+        "TOLL封装",
+        "12V",
+        "48V",
+        "电机驱动",
+        "已宣布可供应"
+      ]
+    },
+    {
+      "id": "n_1893724303dac54b24d6007a",
+      "url": "https://www.basf.com/cn/en/media/news-releases/asia-pacific/2026/10/apac-26-117",
+      "title": "巴斯夫与同济启动旧枕聚氨酯回收探索",
+      "summary": "项目通过收集旧枕，探索聚氨酯泡沫的回收路径及再利用。对座椅发泡循环利用的参考在于材料组成、收集分选和废物流质量管理，尚非汽车座椅回收量产成果。",
+      "category": "发泡",
+      "relatedCategories": [],
+      "aiRelation": "adjacent",
+      "sourceName": "BASF",
+      "publishedAt": "2026-10-21",
+      "collectedAt": "2026-10-28T08:07:38.158Z",
+      "evidenceNote": "原文确认旧枕回收项目已启动，兼具研究与教育性质，并明确聚氨酯用于seating。座椅发泡的参考价值为材料体系相邻推断，置信度中。没有AI证据，没有汽车座椅再生泡沫性能、认证、量产或ROI数据；不能把Loop组合的一般回收能力视为本项目已完成产业验证。日期及项目启动事实置信度高。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "聚氨酯",
+        "泡沫回收",
+        "循环材料",
+        "同济大学",
+        "探索项目",
+        "近7天补查"
+      ]
+    },
+    {
       "id": "forvia-ai-leadership-20261014",
       "url": "https://www.forvia.com/en/press/forvia-strengthens-ai-leadership-appointment-raphael-viard-executive-committee",
       "title": "FORVIA 将 AI 负责人纳入集团执行委员会",
@@ -232,6 +303,23 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-10-28-1000-manual-080738",
+      "startedAt": "2026-10-28T08:07:38.262Z",
+      "completedAt": "2026-10-28T08:11:50.527Z",
+      "status": "partial",
+      "addedCount": 3,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403，未能读取新闻列表；补充域名搜索未获得可核验的窗口内技术原文。",
+        "GRAMMER：配置入口https://www.grammer.com/en/company/newsroom/无法访问；已改读同域名德文新闻列表。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/未返回可读正文；补充搜索未取得可核验候选，未完成该来源核验。",
+        "Johnson Electric：配置入口https://www.johnsonelectric.com/en/news-and-events无法访问；同域名中文公司新闻页仅返回JavaScript提示，搜索摘要未作为原文使用。",
+        "Magna：Stories及Newsroom页面可读，但工具未提取出动态新闻条目；不能据此确认时间窗内无新增。",
+        "Infineon：配置入口https://www.infineon.com/news返回404；已改读官方Press页及两篇技术新闻原文。"
+      ],
+      "note": "本次复核13家官方来源，确认新增3条，6项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
       "runId": "daily-2026-10-28-1000",
       "startedAt": "2026-10-28T07:35:25.974Z",
       "completedAt": "2026-10-28T07:38:11.324Z",
@@ -261,16 +349,16 @@
   ],
   "settings": {
     "schedule": {
-      "enabled": false,
+      "enabled": true,
       "time": "10:00",
       "timezone": "Asia/Shanghai",
       "mode": "local",
-      "verified": false
+      "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-10-28T07:38:11.324Z"
+    "lastSuccessfulCollectionAt": "2026-10-28T08:11:50.527Z"
   },
-  "generatedAt": "2026-10-28T07:38:11.324Z",
+  "generatedAt": "2026-10-28T08:11:50.527Z",
   "publication": {
-    "dataVersion": "3e0a68e4ef55dff72c07d9c8af1198bec3681aee095168711b845d3b8200517d"
+    "dataVersion": "074dd3aa9b2134506b89b7f0fad1db8dfdd63ab6daa364fa35e9ac13a77b7e16"
   }
 }
