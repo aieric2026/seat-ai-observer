@@ -14,6 +14,9 @@ assert.deepEqual(new Set(researcherOmittedEnvironmentKeys(fakeEnvironment)),new 
 assert.equal(fakeEnvironment.CODEX_HOME,'keep-auth-location');checks++;
 for(const url of ['http://example.com/a','https://example.com.evil.test/a','https://127.0.0.1/a','https://user:credential@example.com/a']){assert.throws(()=>canonicalUrl(url,sources));checks++;}
 const normalized=validateArticle(article,{sources,now,newArticle:true});assert.deepEqual(normalized.relatedCategories,['骨架']);checks++;
+const namedSources=[{domain:'example.com',name:'Example Official'}];
+assert.equal(validateArticle(article,{sources:namedSources,now}).sourceName,'Example Official');checks++;
+assert.equal(new Set([article,{...article,sourceName:'另一种显示名'}].map(a=>validateArticle(a,{sources:namedSources,now}).sourceName)).size,1);checks++;
 assert.throws(()=>validateArticle({...article,publishedAt:'2026-10-29'},{sources,now,newArticle:true}));checks++;
 assert.throws(()=>validateArticle({...article,publishedAt:null},{sources,now,newArticle:true}));checks++;
 assert.throws(()=>validateArticle({...article,publishedAt:'2026-01-28'},{sources,now,newArticle:true}));checks++;

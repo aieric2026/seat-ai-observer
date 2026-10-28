@@ -41,7 +41,10 @@ export function validateArticle(raw,{sources,now=new Date(),newArticle=false,bac
   if(publishedAt!==null){if(typeof publishedAt!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(publishedAt)||new Date(`${publishedAt}T00:00:00Z`).toISOString().slice(0,10)!==publishedAt||publishedAt>chinaDate(now))throw Error('Invalid original publication date');}
   if(newArticle){const oldest=chinaDate(new Date(now.getTime()-backfillDays*86400000));if(publishedAt===null||publishedAt<oldest)throw Error('New daily news must have a verified original date within the backfill window');}
   const url=canonicalUrl(raw.url,sources);
-  return {id:raw.id&&typeof raw.id==='string'?raw.id:'n_'+sha256(url).slice(0,24),url,title:plain(raw.title,'title',180),summary:plain(raw.summary,'summary'),category:raw.category,relatedCategories:[...new Set(related)].filter(c=>c!==raw.category),aiRelation:raw.aiRelation,sourceName:plain(raw.sourceName,'sourceName',100),publishedAt,collectedAt:raw.collectedAt&&Number.isFinite(Date.parse(raw.collectedAt))?raw.collectedAt:now.toISOString(),evidenceNote:plain(raw.evidenceNote,'evidenceNote'),tags:[...new Set(raw.tags.map(t=>plain(t,'tag',50)))]};
+  const claimedSourceName=plain(raw.sourceName,'sourceName',100);
+  const registeredSource=sources.find(s=>s.domain===sourceDomain(url,sources));
+  const sourceName=registeredSource?.name??claimedSourceName;
+  return {id:raw.id&&typeof raw.id==='string'?raw.id:'n_'+sha256(url).slice(0,24),url,title:plain(raw.title,'title',180),summary:plain(raw.summary,'summary'),category:raw.category,relatedCategories:[...new Set(related)].filter(c=>c!==raw.category),aiRelation:raw.aiRelation,sourceName,publishedAt,collectedAt:raw.collectedAt&&Number.isFinite(Date.parse(raw.collectedAt))?raw.collectedAt:now.toISOString(),evidenceNote:plain(raw.evidenceNote,'evidenceNote'),tags:[...new Set(raw.tags.map(t=>plain(t,'tag',50)))]};
 }
 export function validateData(data,sources){
   if(!data||!Array.isArray(data.articles)||!Array.isArray(data.runs)||!data.settings||typeof data.settings!=='object')throw Error('Invalid news dataset');

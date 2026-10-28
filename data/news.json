@@ -79,7 +79,7 @@
       "category": "整椅",
       "relatedCategories": [],
       "aiRelation": "direct",
-      "sourceName": "FORVIA 官方",
+      "sourceName": "FORVIA",
       "publishedAt": "2026-10-14",
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "原文日期 14th October 2026；正文明确 AI 职务、执委会任命及规模化方向。属于集团级 AI 治理，不是座椅量产成效。",
@@ -100,7 +100,7 @@
         "执行器"
       ],
       "aiRelation": "enabling",
-      "sourceName": "FORVIA 官方",
+      "sourceName": "FORVIA",
       "publishedAt": "2026-09-10",
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "原文发布日期 10th September 2026；EAC 奖事件日期 May 28, 2026，Transformer 奖 May 29, 2026。智能座椅并不自动等于 AI。",
@@ -118,7 +118,7 @@
       "category": "面套",
       "relatedCategories": [],
       "aiRelation": "direct",
-      "sourceName": "Lectra 官方",
+      "sourceName": "Lectra",
       "publishedAt": "2026-07-29",
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "正文核实 AI-driven automatic defect detection；发布日期由同站官方相关文章卡片 Published on July 29, 2026 交叉确认。",
@@ -136,7 +136,7 @@
       "category": "线束",
       "relatedCategories": [],
       "aiRelation": "adjacent",
-      "sourceName": "Komax 官方",
+      "sourceName": "Komax",
       "publishedAt": "2026-04-22",
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "原文 April 22, 2026；明确 Automatic Conductor Detection 和 Adaptive Incision Control；没有 AI/ML 模型证据，故标相邻工艺。",
@@ -157,7 +157,7 @@
         "整椅"
       ],
       "aiRelation": "direct",
-      "sourceName": "Magna 官方",
+      "sourceName": "Magna",
       "publishedAt": "2026-01-28",
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "原文 January 28, 2026；AI Vision Inspection 段落明确 seating materials。推广到冲压、焊接等是原文所述扩展方向，不等于每家工厂已部署。",
@@ -179,7 +179,7 @@
         "线束"
       ],
       "aiRelation": "adjacent",
-      "sourceName": "Infineon 官方",
+      "sourceName": "Infineon",
       "publishedAt": "2026-01-02",
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "正文日期 Jan 02, 2026；URL 中的 /2025/ 不作为发布日期。原文明确区域控制器、安全数据路由、功率开关、电机控制构建块。",
@@ -200,7 +200,7 @@
         "核心件"
       ],
       "aiRelation": "adjacent",
-      "sourceName": "BASF 官方",
+      "sourceName": "BASF",
       "publishedAt": "2025-11-05",
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "原文 November 5, 2025；明确 modular concept seat、headrest and armrest；不是 AI 项目且为概念座椅。",
@@ -223,7 +223,7 @@
         "核心件"
       ],
       "aiRelation": "enabling",
-      "sourceName": "Brose 官方",
+      "sourceName": "Brose",
       "publishedAt": "2025-04-21",
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "原文 Shanghai, 04-21-2025，超过最近12个月窗口，必须标历史资料。48V风扇和车窗电机量产不等于座椅48V方案量产。",
@@ -245,7 +245,7 @@
         "核心件"
       ],
       "aiRelation": "enabling",
-      "sourceName": "Infineon 官方",
+      "sourceName": "Infineon",
       "publishedAt": null,
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "原文技术应用页，未确认发布日期。OPTIREG SBC、MOTIX DC motor control、PROFET high side power switches 可由 Overview 核对。",
@@ -268,7 +268,7 @@
         "控制器"
       ],
       "aiRelation": "direct",
-      "sourceName": "Hyundai Transys 官方",
+      "sourceName": "Hyundai Transys",
       "publishedAt": null,
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "原文明确 artificial intelligence；同时有 future-oriented、we are developing、we are studying，发布日期未知。技术愿景与研发方向，不推断量产。",
@@ -290,7 +290,7 @@
         "控制器"
       ],
       "aiRelation": "enabling",
-      "sourceName": "Lear 官方",
+      "sourceName": "Lear",
       "publishedAt": null,
       "collectedAt": "2026-10-28T07:34:57.427Z",
       "evidenceNote": "官方产品页无发布日期；有 learning occupant preferences，但未据此强称具体机器学习方案。按智能化基础/产品资料呈现。",
@@ -359,6 +359,6 @@
   },
   "generatedAt": "2026-10-28T08:11:50.527Z",
   "publication": {
-    "dataVersion": "074dd3aa9b2134506b89b7f0fad1db8dfdd63ab6daa364fa35e9ac13a77b7e16"
+    "dataVersion": "bfc63afaf162d3c7165a7e55f69c42dba4398f337faffba17a8d4f39036f43f6"
   }
 }
