@@ -2,13 +2,16 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import {ROOT,canonicalUrl,sourceDomain,validateArticle,verifyEvidence,atomicJson,readJson,validateData} from './news-lib.mjs';
-import {mcpDisableOverrides} from './research.mjs';
+import {researcherArguments,researcherOmittedEnvironmentKeys} from './research.mjs';
 const sources=[{domain:'example.com'}],now=new Date('2026-10-28T05:00:00Z');
 const article={title:'测试：AI视觉检测',summary:'测试数据，不会发布。',category:'面套',relatedCategories:['面套','骨架','骨架'],aiRelation:'direct',sourceName:'测试来源',url:'https://example.com/article?utm_source=test#section',publishedAt:'2026-10-28',evidenceNote:'自检夹具，非真实资讯。',tags:['测试']};
 let checks=0;
 assert.equal(canonicalUrl(article.url,sources),'https://example.com/article');checks++;
 assert.equal(new Set(['https://www.example.com/a','https://news.example.com/b','https://example.com/c'].map(u=>sourceDomain(u,sources))).size,1);checks++;
-assert.deepEqual(mcpDisableOverrides('[mcp_servers.public]\nurl="https://example.com"\n[mcp_servers."key.with.dot"]\nurl="private"\n[mcp_servers.public.env]\nSECRET="not-a-server-key"'),['-c','mcp_servers.public.enabled=false','-c','mcp_servers."key.with.dot".enabled=false']);checks++;
+const isolatedArgs=await researcherArguments({},'test-result.json');assert.ok(isolatedArgs.includes('mcp_servers={}')&&isolatedArgs.includes('--ignore-user-config')&&isolatedArgs.includes('--no-daemon')&&isolatedArgs.includes('model_provider="openai"'));checks++;
+const fakeEnvironment={OPENAI_API_KEY:'SYNTHETIC',CODEX_API_KEY:'SYNTHETIC',CODEX_ACCESS_TOKEN:'SYNTHETIC',OPENAI_BASE_URL:'https://example.invalid',CHATGPT_BASE_URL:'https://example.invalid',CODEX_HOME:'keep-auth-location',PATH:'keep-path'};
+assert.deepEqual(new Set(researcherOmittedEnvironmentKeys(fakeEnvironment)),new Set(['OPENAI_API_KEY','CODEX_API_KEY','CODEX_ACCESS_TOKEN','OPENAI_BASE_URL','CHATGPT_BASE_URL']));checks++;
+assert.equal(fakeEnvironment.CODEX_HOME,'keep-auth-location');checks++;
 for(const url of ['http://example.com/a','https://example.com.evil.test/a','https://127.0.0.1/a','https://user:credential@example.com/a']){assert.throws(()=>canonicalUrl(url,sources));checks++;}
 const normalized=validateArticle(article,{sources,now,newArticle:true});assert.deepEqual(normalized.relatedCategories,['骨架']);checks++;
 assert.throws(()=>validateArticle({...article,publishedAt:'2026-10-29'},{sources,now,newArticle:true}));checks++;

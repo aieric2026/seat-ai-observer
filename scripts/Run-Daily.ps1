@@ -4,6 +4,8 @@ param(
   [string]$ProjectRoot = (Split-Path -Parent $PSScriptRoot)
 )
 $ErrorActionPreference = 'Stop'
+$OutputEncoding = [Text.UTF8Encoding]::new($false)
+[Console]::OutputEncoding = [Text.UTF8Encoding]::new($false)
 $project = (Resolve-Path -LiteralPath $ProjectRoot).Path
 if (-not (Test-Path -LiteralPath $NodeExe -PathType Leaf)) { throw 'The registered Node executable no longer exists.' }
 $runner = Join-Path $project 'scripts\update.mjs'

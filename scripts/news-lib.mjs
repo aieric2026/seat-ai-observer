@@ -56,9 +56,10 @@ export async function acquireLock(){
     catch(error){if(error.code!=='EEXIST')throw error;const current=await readJson(file);let alive=true;try{process.kill(current.pid,0);}catch(e){if(e.code==='ESRCH')alive=false;}if(alive)throw Error('Another updater is running; the overlap was rejected');await fs.rm(file,{force:true});}
   }throw Error('Unable to acquire update lock');
 }
-export async function command(executable,args,{cwd=ROOT,input='',timeoutMs=120000,logFile,env={}}={}){
+export async function command(executable,args,{cwd=ROOT,input='',timeoutMs=120000,logFile,env={},omitEnv=[]}={}){
   return new Promise((resolve,reject)=>{
-    const child=spawn(executable,args,{cwd,windowsHide:true,stdio:['pipe','pipe','pipe'],env:{...process.env,GIT_TERMINAL_PROMPT:'0',GCM_INTERACTIVE:'Never',...env}});
+    const childEnvironment={...process.env,GIT_TERMINAL_PROMPT:'0',GCM_INTERACTIVE:'Never',...env};for(const key of omitEnv)delete childEnvironment[key];
+    const child=spawn(executable,args,{cwd,windowsHide:true,stdio:['pipe','pipe','pipe'],env:childEnvironment});
     const chunks=[];let count=0,timedOut=false;
     child.stdout.on('data',b=>{count+=b.length;if(count<10_000_000)chunks.push(b)});child.stderr.on('data',b=>{count+=b.length;if(count<10_000_000)chunks.push(b)});
     const timer=setTimeout(()=>{timedOut=true;if(process.platform==='win32'){const killer=spawn('taskkill.exe',['/PID',String(child.pid),'/T','/F'],{windowsHide:true,stdio:'ignore'});killer.on('error',()=>child.kill());}else child.kill('SIGTERM');},timeoutMs);
@@ -95,6 +96,6 @@ export function verifyEvidence(raw,page){
   const monthPattern=`(?:${months[month-1]}|${months[month-1].slice(0,3)})`;
   const patterns=[new RegExp(`${year}[-/.年]0?${month}[-/.月]0?${day}(?:日)?`),new RegExp(`${monthPattern}\\.?\\s+0?${day}(?:st|nd|rd|th)?[ ,]+${year}`),new RegExp(`0?${day}(?:st|nd|rd|th)?\\s+${monthPattern}[ ,]+${year}`)];
   if(!patterns.some(p=>p.test(normalizedDateQuote)))throw Error('Date evidence does not substantiate the proposed original date');
-  if(raw.aiRelation==='direct'&&!/\bartificial intelligence\b|\bmachine learning\b|\bdeep learning\b|\bgenerative ai\b|\bai\b|人工智能|机器学习|深度学习|生成式/i.test(page.text))throw Error('Direct AI classification lacks AI wording in the source');
+  if(raw.aiRelation==='direct'&&!/\bartificial intelligence\b|\bmachine learning\b|\bdeep learning\b|\bgenerative ai\b|\bai\b|人工智能|机器学习|深度学习|生成式/i.test(quote))throw Error('Direct AI classification needs explicit AI wording in the original evidence quote, not only navigation or related links');
   return{url:page.url,sourceHash:page.sha256,evidenceQuote:quote,dateEvidenceQuote:dateQuote};
 }
