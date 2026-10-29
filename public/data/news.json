@@ -303,6 +303,24 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-10-29-1000",
+      "startedAt": "2026-10-29T02:00:02.180Z",
+      "completedAt": "2026-10-29T02:02:39.435Z",
+      "status": "partial",
+      "addedCount": 0,
+      "checkedSources": 11,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403；补查 https://www.forvia.com/newsroom 亦无法访问。",
+        "GRAMMER：https://www.grammer.com/en/company/newsroom/ 无法访问；补查 https://www.grammer.com/en/newsroom.html 亦失败。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 无法访问；补查 https://www.johnsonelectric.com/en/news 亦失败。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 返回零行可读正文，无法核查新闻及日期。",
+        "Magna：https://www.magna.com/stories 和 https://www.magna.com/newsroom/news 可打开，但提取结果仅有导航和订阅等内容，未取得可核查的新闻列表。",
+        "Infineon：配置入口 https://www.infineon.com/news 返回404；已通过官方 /about/press 和 /about/investor/news 替代检查。",
+        "Infineon：https://www.infineon.com/our-stories/artificial-intelligence-in-everyday-life 搜索可发现，但原文读取失败，未以搜索摘要收录。"
+      ],
+      "note": "本次复核11家官方来源，确认新增0条，7项来源访问或候选核验受限。未发现符合收录标准的新增，保留此前内容。"
+    },
+    {
       "runId": "daily-2026-10-28-1000-manual-080738",
       "startedAt": "2026-10-28T08:07:38.262Z",
       "completedAt": "2026-10-28T08:11:50.527Z",
@@ -355,10 +373,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-10-28T08:11:50.527Z"
+    "lastSuccessfulCollectionAt": "2026-10-29T02:02:39.435Z"
   },
-  "generatedAt": "2026-10-28T08:11:50.527Z",
+  "generatedAt": "2026-10-29T02:02:39.435Z",
   "publication": {
-    "dataVersion": "bfc63afaf162d3c7165a7e55f69c42dba4398f337faffba17a8d4f39036f43f6"
+    "dataVersion": "8b0bcb425f3f5aff2c6cf70acb29d5964e93521b61d30bfcaa96787883e889f9"
   }
 }
