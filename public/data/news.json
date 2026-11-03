@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "n_3ea343aa972940e9b7a15da0",
+      "url": "https://www.infineon.com/press-release/2026/infpr202611-023",
+      "title": "英飞凌与高通合作开发车载AI计算安全子系统",
+      "summary": "双方签署技术协议，为Snapdragon Ride参考平台配套基于微控制器的子系统，以AURIX和OPTIREG支持系统健康监测、安全机制及实时控制。对座椅控制器开发的参考意义在于车载AI计算与可靠控制的协同架构。",
+      "category": "控制器",
+      "relatedCategories": [],
+      "aiRelation": "direct",
+      "sourceName": "Infineon",
+      "publishedAt": "2026-11-02",
+      "collectedAt": "2026-11-03T02:00:06.256Z",
+      "evidenceNote": "原文明确涉及车载人工智能参考平台及其安全子系统，属于技术合作与开发公告；不是集团AI治理，也未证明座椅AI已部署、车型已量产或取得验收。原文应用重点为自动驾驶与数字座舱，未提及座椅；对座椅控制器的意义仅为架构参考推断。发布日期与合作内容置信度高，座椅迁移相关性置信度中。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "车载AI",
+        "AURIX",
+        "Snapdragon Ride",
+        "安全监测",
+        "技术合作",
+        "座椅关联为推断"
+      ]
+    },
+    {
       "id": "n_60603846232034b4c5c3fdd6",
       "url": "https://www.magna.com/stories/tech-talks/2026/why-software-in-the-loop-testing-is-only-as-strong-as-the-system-around-it",
       "title": "Magna解析软件在环验证：模型与实物测试需形成闭环",
@@ -327,6 +348,23 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-11-03-1000",
+      "startedAt": "2026-11-03T02:00:06.374Z",
+      "completedAt": "2026-11-03T02:03:01.930Z",
+      "status": "partial",
+      "addedCount": 1,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403，未能读取新闻列表。",
+        "Infineon：https://www.infineon.com/news 返回404；已通过搜索定位并读取官方原文。",
+        "GRAMMER：配置的英文新闻入口无法访问；已读取德文官方新闻列表。",
+        "Johnson Electric：配置入口无法访问；替代官方公司新闻列表仅返回JavaScript提示，无法核查新闻内容。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 未返回可读正文，未完成新闻核验。",
+        "Magna：Stories及News页面可读取，但工具未提取出文章列表，无法确认其全部近期发布。"
+      ],
+      "note": "本次复核13家官方来源，确认新增1条，6项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
       "runId": "daily-2026-11-02-1000",
       "startedAt": "2026-11-02T02:00:05.664Z",
       "completedAt": "2026-11-02T02:04:03.612Z",
@@ -415,10 +453,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-11-02T02:04:03.612Z"
+    "lastSuccessfulCollectionAt": "2026-11-03T02:03:01.930Z"
   },
-  "generatedAt": "2026-11-02T02:04:03.612Z",
+  "generatedAt": "2026-11-03T02:03:01.930Z",
   "publication": {
-    "dataVersion": "8a9ac17892670b01373f116467c77af2ff976c8b341a860d3931a0b53bd9819b"
+    "dataVersion": "a9b569e6d8e9073d9fddb8e7b9f6e25e59287402012eade4ba05664c52b1ece7"
   }
 }
