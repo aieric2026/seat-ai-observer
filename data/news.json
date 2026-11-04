@@ -348,6 +348,24 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-11-04-1000",
+      "startedAt": "2026-11-04T02:00:09.561Z",
+      "completedAt": "2026-11-04T02:02:37.628Z",
+      "status": "partial",
+      "addedCount": 0,
+      "checkedSources": 12,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403，未读取新闻列表。",
+        "Lectra：https://www.lectra.com/en/library 两次读取均超时，未完成原文核查。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 工具报告不可访问。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 返回页面无可读正文，未完成新闻核查。",
+        "Magna：Stories及Newsroom页面可读取，但未提取出新闻条目，近期技术发布覆盖受限。",
+        "GRAMMER：配置入口 https://www.grammer.com/en/company/newsroom/ 不可访问；已通过官方替代入口 https://www.grammer.com/en/press-releases/ 完成列表及候选原文读取。",
+        "Infineon：配置入口 https://www.infineon.com/news 返回404；已通过官方替代新闻列表及已收录原文完成核查。"
+      ],
+      "note": "本次复核12家官方来源，确认新增0条，7项来源访问或候选核验受限。未发现符合收录标准的新增，保留此前内容。"
+    },
+    {
       "runId": "daily-2026-11-03-1000",
       "startedAt": "2026-11-03T02:00:06.374Z",
       "completedAt": "2026-11-03T02:03:01.930Z",
@@ -453,10 +471,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-11-03T02:03:01.930Z"
+    "lastSuccessfulCollectionAt": "2026-11-04T02:02:37.628Z"
   },
-  "generatedAt": "2026-11-03T02:03:01.930Z",
+  "generatedAt": "2026-11-04T02:02:37.628Z",
   "publication": {
-    "dataVersion": "a9b569e6d8e9073d9fddb8e7b9f6e25e59287402012eade4ba05664c52b1ece7"
+    "dataVersion": "0b9cd1695fd13cfc411d17f5c5e26c257fb74a914c59d21fd6f53949bce02828"
   }
 }
