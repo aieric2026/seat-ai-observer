@@ -1,6 +1,74 @@
 {
   "articles": [
     {
+      "id": "n_2d29d2c7093981840077061a",
+      "url": "https://www.infineon.com/press-release/2026/infpr202611-026",
+      "title": "英飞凌公布面向车控与边缘AI的RISC-V平台",
+      "summary": "AURIX RC1拟整合实时控制、边缘AI处理和车载网络能力，覆盖区域、车身及座舱控制等应用。公司计划于2027年上半年提供样片。",
+      "category": "控制器",
+      "relatedCategories": [
+        "整椅"
+      ],
+      "aiRelation": "direct",
+      "sourceName": "Infineon",
+      "publishedAt": "2026-11-04",
+      "collectedAt": "2026-11-05T02:00:18.766Z",
+      "evidenceNote": "原文明示edge AI处理单元及AI辅助软件迁移工具，属于平台研发与产品路线发布；electronica将展示家族概念，样片目标为2027年上半年，不能表述为已量产、已部署或已通过整车验收。对座椅的意义是未来区域及车身控制架构可能承接座椅功能，此关联为工程推断，原文未公布座椅项目或客户。发布事实置信度高，座椅关联置信度中。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "RISC-V",
+        "边缘AI",
+        "实时控制",
+        "区域控制",
+        "平台研发",
+        "样片计划"
+      ]
+    },
+    {
+      "id": "n_5879c86a49480ac6bab86dc5",
+      "url": "https://www.lectra.com/en/library/why-is-continuous-improvement-no-longer-enough-to-maintain-manufacturing-performance",
+      "title": "Lectra以实时指标连接汽车面料裁剪与多工厂改善",
+      "summary": "Lectra介绍将Algopex绩效数据与Vector Automotive iP裁剪执行结合，通过统一实时指标比较工厂表现，为座椅面套裁剪的材料消耗和设备管理提供参考。",
+      "category": "面套",
+      "relatedCategories": [],
+      "aiRelation": "enabling",
+      "sourceName": "Lectra",
+      "publishedAt": "2026-11-03",
+      "collectedAt": "2026-11-05T02:00:18.766Z",
+      "evidenceNote": "官方Content Hub明确标示Published on November 3, 2026，文章页标示同日Edited on，日期由列表与原文交叉核对。本文是汽车内饰裁剪绩效管理介绍，正文未明确证明使用AI算法，因此归为智能化数据基础。文中引用Tesca既有实践，不能将案例效果解释为此次新部署的验收结果，也不能外推为所有座椅工厂的收益。未提交下载表单或读取受限指南。内容及日期置信度高，具体座椅面套应用关联置信度中。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "汽车内饰",
+        "面套裁剪",
+        "实时KPI",
+        "多工厂管理",
+        "数据基础",
+        "工艺管理"
+      ]
+    },
+    {
+      "id": "n_fb83b0693503d04169724f11",
+      "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-11-03-ti-celebrates-70-years-of-innovation-in-europe-alongside-leading-customers-to-engineer-next-generation-systems.html",
+      "title": "TI介绍物理AI机器人的实时控制与电机基础",
+      "summary": "TI在欧洲业务周年发布中介绍与ABB Robotics推进下一代机器人的合作，涉及感知、实时控制微控制器和电机控制器件，可供座椅制造自动化设备开发参考。",
+      "category": "控制器",
+      "relatedCategories": [
+        "电机",
+        "执行器"
+      ],
+      "aiRelation": "direct",
+      "sourceName": "Texas Instruments",
+      "publishedAt": "2026-11-03",
+      "collectedAt": "2026-11-05T02:00:18.766Z",
+      "evidenceNote": "正文明确讨论physical AI及ABB Robotics下一代机器人研发合作，并列出实时控制、感知和电机控制基础。属于合作及技术方向介绍，未公布具体座椅产线部署、机器人量产状态、交付验收或ROI；不能把整篇周年新闻视为新产品量产公告。与座椅的联系限于制造自动化设备的潜在技术参考，不证明座椅产品自身采用AI。原文事实置信度高，座椅制造适用性置信度中。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "物理AI",
+        "机器人研发",
+        "实时控制",
+        "电机控制",
+        "制造自动化",
+        "ABB Robotics"
+      ]
+    },
+    {
       "id": "n_3ea343aa972940e9b7a15da0",
       "url": "https://www.infineon.com/press-release/2026/infpr202611-023",
       "title": "英飞凌与高通合作开发车载AI计算安全子系统",
@@ -348,6 +416,23 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-11-05-1000",
+      "startedAt": "2026-11-05T02:00:19.045Z",
+      "completedAt": "2026-11-05T02:03:37.762Z",
+      "status": "partial",
+      "addedCount": 3,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403，未能读取新闻列表；补充搜索未取得可确认的窗内候选原文。",
+        "Magna：Stories和News页面可读取，但提取内容未显示新闻条目，无法充分核实该来源的窗内新增。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 返回零行可读内容，未能核查新闻列表。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 工具报告不可访问，未能核查新闻列表。",
+        "GRAMMER：配置的/company/newsroom/入口不可访问；已改用官方/en/press-releases/完成列表读取。",
+        "Infineon：配置的/news入口返回404；已改用官方/about/press及候选原文完成读取。"
+      ],
+      "note": "本次复核13家官方来源，确认新增3条，6项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
       "runId": "daily-2026-11-04-1000",
       "startedAt": "2026-11-04T02:00:09.561Z",
       "completedAt": "2026-11-04T02:02:37.628Z",
@@ -471,10 +556,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-11-04T02:02:37.628Z"
+    "lastSuccessfulCollectionAt": "2026-11-05T02:03:37.762Z"
   },
-  "generatedAt": "2026-11-04T02:02:37.628Z",
+  "generatedAt": "2026-11-05T02:03:37.762Z",
   "publication": {
-    "dataVersion": "0b9cd1695fd13cfc411d17f5c5e26c257fb74a914c59d21fd6f53949bce02828"
+    "dataVersion": "087152f8550e3de4809d4f18645195c19d92b78f011883f6bc76a3dfc3be6b43"
   }
 }
