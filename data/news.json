@@ -1,6 +1,30 @@
 {
   "articles": [
     {
+      "id": "n_efa1e350f641d22c5548ea4c",
+      "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-11-05-ti-simplifies-industrial-ethernet-integration-for-connected-factories-with-the-industrys-smallest-fully-featured-multiprotocol-communications-module.html",
+      "title": "TI推出多协议工厂通信器件，连接现场执行器与控制系统",
+      "summary": "TI发布TICS100MOD工业以太网模块和TIOM2212双通道IO-Link主站。前者支持多种实时以太网协议，后者连接现场传感器、执行器与上层网络，可供座椅生产设备联网和数据采集方案评估。",
+      "category": "控制器",
+      "relatedCategories": [
+        "执行器",
+        "整椅"
+      ],
+      "aiRelation": "enabling",
+      "sourceName": "Texas Instruments",
+      "publishedAt": "2026-11-05",
+      "collectedAt": "2026-11-06T02:00:08.387Z",
+      "evidenceNote": "原文确认新品发布及工业通信功能，属于智能制造联网基础，不能据此认定采用AI算法。座椅关联为工程推断：可用于座椅装配、测试设备的现场器件联网；原文未披露座椅客户、车规座椅控制应用或座椅工厂部署。供货阶段须区分：TIOM2212已有预生产数量，TICS100MOD计划2026年底前供货；协议软件栈的production-ready表述不代表座椅系统已量产或验收。事实置信度高，座椅迁移价值置信度中。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "工业以太网",
+        "IO-Link",
+        "工厂联网",
+        "生产设备控制",
+        "预生产供货",
+        "非直接AI"
+      ]
+    },
+    {
       "id": "n_2d29d2c7093981840077061a",
       "url": "https://www.infineon.com/press-release/2026/infpr202611-026",
       "title": "英飞凌公布面向车控与边缘AI的RISC-V平台",
@@ -416,6 +440,23 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-11-06-1000",
+      "startedAt": "2026-11-06T02:00:08.424Z",
+      "completedAt": "2026-11-06T02:03:07.367Z",
+      "status": "partial",
+      "addedCount": 1,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 与 https://www.forvia.com/press 均返回403，未完成原文核查。",
+        "Magna：Stories及News页面可读取，但提取结果未显示新闻条目，无法确认列表完整性。",
+        "GRAMMER：配置入口不可访问；已读取替代官方新闻列表，但可见条目较旧，不能保证涵盖全部语言版本。",
+        "Hyundai Transys：英文主页无可读正文；官方博客列表已读取，但候选 https://blog.hyundai-transys.com/748 原文请求失败，且列表与搜索结果存在缓存差异，未收录。",
+        "Infineon：https://www.infineon.com/news 返回404，替代新闻入口亦不可访问；搜索补查未形成符合本次新增条件且完成原文核验的条目。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 不可访问；搜索补查未取得窗口内可核验原文。"
+      ],
+      "note": "本次复核13家官方来源，确认新增1条，6项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
       "runId": "daily-2026-11-05-1000",
       "startedAt": "2026-11-05T02:00:19.045Z",
       "completedAt": "2026-11-05T02:03:37.762Z",
@@ -556,10 +597,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-11-05T02:03:37.762Z"
+    "lastSuccessfulCollectionAt": "2026-11-06T02:03:07.367Z"
   },
-  "generatedAt": "2026-11-05T02:03:37.762Z",
+  "generatedAt": "2026-11-06T02:03:07.367Z",
   "publication": {
-    "dataVersion": "087152f8550e3de4809d4f18645195c19d92b78f011883f6bc76a3dfc3be6b43"
+    "dataVersion": "4e88b7dc858d56b1ee01a5ed6fac4180d8212bb3445534fa62045bb30403494f"
   }
 }
