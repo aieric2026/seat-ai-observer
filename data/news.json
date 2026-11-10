@@ -1,6 +1,56 @@
 {
   "articles": [
     {
+      "id": "n_38b7fb1940b05c57118f211b",
+      "url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-190",
+      "title": "BASF联合开发便于拆解与材料分离的概念座椅",
+      "summary": "现代汽车—起亚、Alten Korea与BASF为起亚EV3 Study Car 2.0共同设计概念座椅，将循环材料与拆解要求纳入整体架构。方案涉及TPU头枕、含消费后回收原料的PU坐垫和靠背泡沫、生物循环原料合成革，以及回收聚酰胺靠背盖。",
+      "category": "整椅",
+      "relatedCategories": [
+        "发泡",
+        "面套",
+        "骨架"
+      ],
+      "aiRelation": "adjacent",
+      "sourceName": "BASF",
+      "publishedAt": "2026-11-09",
+      "collectedAt": "2026-11-10T02:00:12.795Z",
+      "evidenceNote": "事实与发布日期置信度高，原文明确为概念座椅合作。材料选择、装配与报废拆解属于座椅产品开发的直接工程议题，但未提供AI应用证据，故归为adjacent。原文提出可用Ultramid替代金属靠背骨架并整合背盖的方向，不能据此认定该替代方案已验证或量产；亦未披露整椅量产、客户验收、回收效率或ROI。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "概念座椅",
+        "循环材料",
+        "可拆解设计",
+        "聚氨酯泡沫",
+        "合成革",
+        "回收聚酰胺"
+      ]
+    },
+    {
+      "id": "n_754124d27121179a5e14a7af",
+      "url": "https://www.infineon.com/partners/partner-news/2026/infineon-and-bonsystems",
+      "title": "英飞凌与Bonsystems合作开发物理AI机器人执行器",
+      "summary": "双方宣布合作开发机器人关节执行器系统，初期聚焦中低功率关节，结合紧凑减速机构与电机控制、功率器件、微控制器、传感及固件。其紧凑集成、变负载控制和过载保护思路可供座椅执行器研发参考，原文未宣布座椅应用。",
+      "category": "执行器",
+      "relatedCategories": [
+        "电机",
+        "控制器",
+        "核心件"
+      ],
+      "aiRelation": "direct",
+      "sourceName": "Infineon",
+      "publishedAt": "2026-11-04",
+      "collectedAt": "2026-11-10T02:00:12.795Z",
+      "evidenceNote": "发布日期及合作事实置信度高。direct依据是正文明确讨论physical AI及面向该领域的执行器研发合作，不表示执行器本体已运行机器学习算法。当前证据包括合作开发方向，以及此前在OktoberTech展示的七自由度机械臂；未披露客户量产、座椅部署、验收或实际收益。对座椅的价值为工程类比，置信度中，仍需验证汽车环境、功能安全、噪声、成本与寿命适配性。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "Physical AI",
+        "研发合作",
+        "机器人关节",
+        "电机控制",
+        "执行器集成",
+        "座椅应用待验证"
+      ]
+    },
+    {
       "id": "n_efa1e350f641d22c5548ea4c",
       "url": "https://www.ti.com/about-ti/newsroom/news-releases/2026/2026-11-05-ti-simplifies-industrial-ethernet-integration-for-connected-factories-with-the-industrys-smallest-fully-featured-multiprotocol-communications-module.html",
       "title": "TI推出多协议工厂通信器件，连接现场执行器与控制系统",
@@ -440,6 +490,24 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-11-10-1000",
+      "startedAt": "2026-11-10T02:00:12.886Z",
+      "completedAt": "2026-11-10T02:03:32.714Z",
+      "status": "partial",
+      "addedCount": 2,
+      "checkedSources": 12,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403，未读取到新闻列表。",
+        "Covestro：https://www.covestro.com/press/ 及无末尾斜杠版本返回403；候选Meppen生产线原文亦返回403，搜索内容未作为收录依据。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 未提取到可读正文，无法确认最新发布。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 工具报告不可访问，未完成原文核查。",
+        "GRAMMER：配置的英文newsroom地址不可访问；已改读官方德文新闻列表。",
+        "Infineon：配置的https://www.infineon.com/news 返回404；已改读官方Press页及候选原文。",
+        "Magna：Stories和News页面可读取，但提取结果未显示动态文章列表，最新资讯覆盖受限。"
+      ],
+      "note": "本次复核12家官方来源，确认新增2条，7项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
       "runId": "daily-2026-11-09-1000",
       "startedAt": "2026-11-09T02:00:10.674Z",
       "completedAt": "2026-11-09T02:03:15.020Z",
@@ -615,10 +683,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-11-09T02:03:15.020Z"
+    "lastSuccessfulCollectionAt": "2026-11-10T02:03:32.714Z"
   },
-  "generatedAt": "2026-11-09T02:03:15.020Z",
+  "generatedAt": "2026-11-10T02:03:32.714Z",
   "publication": {
-    "dataVersion": "61e5a45d6a3bcdd075db0d72f647e66bd098959b056cf408d56e7204cbfd91b4"
+    "dataVersion": "0f160c657dd8c50d840751f50662a59a41e5ad3f101710886fdfe3ed6d43e42b"
   }
 }
