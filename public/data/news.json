@@ -1,6 +1,31 @@
 {
   "articles": [
     {
+      "id": "n_4c414d733c8f8ca634a85158",
+      "url": "https://www.ti.com/en-us/about-ti/newsroom/news-releases/2026/2026-11-10-ti-redefines-embedded-development-with-agentic-ai-in-its-ccstudio-ecosystem-empowering-engineers-to-accelerate-innovation",
+      "title": "TI将智能体AI接入嵌入式软件迁移与调试",
+      "summary": "TI更新CCStudio开发生态，通过MCP提供器件资料，使AI代理参与代码生成、外设配置、构建、烧录和调试。对采用兼容TI器件的座椅控制器软件研发具有参考意义。",
+      "category": "控制器",
+      "relatedCategories": [
+        "电机",
+        "执行器"
+      ],
+      "aiRelation": "direct",
+      "sourceName": "Texas Instruments",
+      "publishedAt": "2026-11-10",
+      "collectedAt": "2026-11-11T02:00:06.839Z",
+      "evidenceNote": "置信度：高，发布日期与AI功能均有正文支持。属于已宣布可用的AI辅助研发工具，原文同时说明将在electronica演示。与座椅控制器的关联是基于嵌入式软件开发需求的推断，须核对具体器件支持；原文未证明座椅项目已部署、通过功能安全验收或用于量产。软件迁移提速属于厂商宣称，未作独立验证，不据此推算座椅项目效果或ROI。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "智能体AI",
+        "嵌入式开发",
+        "CCStudio",
+        "MCP",
+        "软件迁移",
+        "工具已可用",
+        "座椅应用待验证"
+      ]
+    },
+    {
       "id": "n_38b7fb1940b05c57118f211b",
       "url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-190",
       "title": "BASF联合开发便于拆解与材料分离的概念座椅",
@@ -490,6 +515,26 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-11-11-1000",
+      "startedAt": "2026-11-11T02:00:06.906Z",
+      "completedAt": "2026-11-11T02:03:21.470Z",
+      "status": "partial",
+      "addedCount": 1,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403，未能读取新闻列表。",
+        "Covestro：https://www.covestro.com/press/ 及无尾斜杠版本均返回403；搜索结果未作为原文证据。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 工具无法访问，未能读取新闻列表。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 无可读正文；已另行读取其官方博客原文。",
+        "Magna：Stories及News页面可读取框架，但未返回动态文章列表，新增覆盖不完整。",
+        "Lectra：https://www.lectra.com/en/library/reduce-production-delays-with-better-information-flow 两次读取均返回Cache miss，未收录。",
+        "GRAMMER：配置的新闻室地址无法访问；已改读官方德文及英文新闻列表。",
+        "Infineon：配置的 https://www.infineon.com/news 返回404；已改读 https://www.infineon.com/about/press 。",
+        "TI：新闻稿总列表仅返回少量框架内容；已通过搜索找到并完整读取11月10日候选原文。"
+      ],
+      "note": "本次复核13家官方来源，确认新增1条，9项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
       "runId": "daily-2026-11-10-1000",
       "startedAt": "2026-11-10T02:00:12.886Z",
       "completedAt": "2026-11-10T02:03:32.714Z",
@@ -683,10 +728,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-11-10T02:03:32.714Z"
+    "lastSuccessfulCollectionAt": "2026-11-11T02:03:21.470Z"
   },
-  "generatedAt": "2026-11-10T02:03:32.714Z",
+  "generatedAt": "2026-11-11T02:03:21.470Z",
   "publication": {
-    "dataVersion": "0f160c657dd8c50d840751f50662a59a41e5ad3f101710886fdfe3ed6d43e42b"
+    "dataVersion": "7cbab2843fa653b1e34fadddfa8c3b7302bd205219bea0eb08ed558470f5ffb4"
   }
 }
