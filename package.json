@@ -7,7 +7,8 @@
   "scripts": {
     "dev": "vite --host 127.0.0.1",
     "check": "tsc --noEmit",
-    "build": "tsc --noEmit && vite build",
+    "build": "node --experimental-strip-types scripts/check-public-feed.mjs && tsc --noEmit && vite build",
+    "postbuild": "node scripts/package-public-archive.mjs",
     "preview": "vite preview --host 127.0.0.1"
   },
   "dependencies": {

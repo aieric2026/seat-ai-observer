@@ -4,6 +4,10 @@
 
 ## 本机预览与构建
 
+线上版本沿用每天北京时间 10:00 的云端采集任务。私有站写入并读回核验后，将授权生效后新增且适合公开的资讯追加到 `public/data/verified.json`。该文件是文章数组，字段限于 `title`、`summary`、`category`、`relatedCategories`、`aiRelation`、`sourceName`、`url`、`publishedAt`、`evidenceNote`。同一原文或事件只公开一次。无新增时保留上一次发布。
+
+推送到 main 会通过现有 Pages 工作流校验并部署。发布完成后读回 Pages 的 `data/verified.json` 确认内容。原有公开文章继续保留；构建时从历史快照剔除运行记录和配置。下文关于 Windows 任务的内容适用于旧版本机工具。
+
 要求 Node.js ≥22.13.0，使用项目锁文件安装依赖：
 
 ```powershell
