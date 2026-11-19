@@ -4,9 +4,9 @@
 
 ## 本机预览与构建
 
-线上版本沿用每天北京时间 10:00 的云端采集任务。私有站写入并读回核验后，将授权生效后新增且适合公开的资讯追加到 `public/data/verified.json`。该文件是文章数组，字段限于 `title`、`summary`、`category`、`relatedCategories`、`aiRelation`、`sourceName`、`url`、`publishedAt`、`evidenceNote`。同一原文或事件只公开一次。无新增时保留上一次发布。
+本机 Windows 任务每天北京时间 10:00 启动采集、独立核验原文并推送 GitHub Pages。`data/news.json` 与 `public/data/news.json` 为本机程序维护的同版本数据。原 Sites 云端任务仍由用户单独管理，不以本机任务的状态推断其已停用。
 
-推送到 main 会通过现有 Pages 工作流校验并部署。发布完成后读回 Pages 的 `data/verified.json` 确认内容。原有公开文章继续保留；构建时从历史快照剔除运行记录和配置。下文关于 Windows 任务的内容适用于旧版本机工具。
+现有 `public/data/verified.json` 继续保留为已核验的公开补充文章流，字段限于 `title`、`summary`、`category`、`relatedCategories`、`aiRelation`、`sourceName`、`url`、`publishedAt`、`evidenceNote`。页面按原文 URL 与本机文章去重，同一 URL 以本机归档为准。推送 main 后经 Pages 工作流校验、构建和部署；构建产物剔除运行记录和配置。发布器读回公开文章的完整内容指纹，实际一致后才记录发布成功；本机运行详情留在 `.runtime/`。
 
 要求 Node.js ≥22.13.0，使用项目锁文件安装依赖：
 

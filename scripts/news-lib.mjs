@@ -71,7 +71,13 @@ export async function command(executable,args,{cwd=ROOT,input='',timeoutMs=12000
     child.stdin.on('error',()=>{});child.stdin.end(input,'utf8');
   });
 }
-export async function buildStatic(){const vite=path.join(ROOT,'node_modules/vite/bin/vite.js');await fs.access(vite);await command(process.execPath,[vite,'build'],{timeoutMs:600000,logFile:path.join(ROOT,'.runtime/logs/build.log')});}
+export async function buildStatic(){
+  const vite=path.join(ROOT,'node_modules/vite/bin/vite.js');await fs.access(vite);
+  await command(process.execPath,['--experimental-strip-types',path.join(ROOT,'scripts/check-public-feed.mjs')],{logFile:path.join(ROOT,'.runtime/logs/feed-check.log')});
+  await command(process.execPath,[path.join(ROOT,'node_modules/typescript/bin/tsc'),'--noEmit'],{logFile:path.join(ROOT,'.runtime/logs/type-check.log')});
+  await command(process.execPath,[vite,'build'],{timeoutMs:600000,logFile:path.join(ROOT,'.runtime/logs/build.log')});
+  await command(process.execPath,[path.join(ROOT,'scripts/package-public-archive.mjs')],{logFile:path.join(ROOT,'.runtime/logs/package-public.log')});
+}
 export async function exportData(data){const fingerprint=sha256(JSON.stringify({articles:data.articles,runs:data.runs,settings:data.settings,generatedAt:data.generatedAt}));data.publication={dataVersion:fingerprint};await atomicJson(path.join(ROOT,'data/news.json'),data);await atomicJson(path.join(ROOT,'public/data/news.json'),data);return fingerprint;}
 export function stripHtml(html){return html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/gi,' ').replace(/<style\b[^>]*>[\s\S]*?<\/style>/gi,' ').replace(/<[^>]+>/g,' ').replace(/&(?:nbsp|#160);/gi,' ').replace(/&amp;/gi,'&').replace(/&quot;/gi,'"').replace(/&#39;|&apos;/gi,"'").replace(/&#(\d+);/g,(_,v)=>String.fromCodePoint(Number(v))).replace(/&#x([a-f\d]+);/gi,(_,v)=>String.fromCodePoint(parseInt(v,16))).replace(/\s+/g,' ').trim();}
 export async function fetchOfficial(url,sources,timeoutSeconds=25){
@@ -98,7 +104,16 @@ export function verifyEvidence(raw,page){
   const normalizedDateQuote=norm(dateQuote);
   const monthPattern=`(?:${months[month-1]}|${months[month-1].slice(0,3)})`;
   const patterns=[new RegExp(`${year}[-/.年]0?${month}[-/.月]0?${day}(?:日)?`),new RegExp(`${monthPattern}\\.?\\s+0?${day}(?:st|nd|rd|th)?[ ,]+${year}`),new RegExp(`0?${day}(?:st|nd|rd|th)?\\s+${monthPattern}[ ,]+${year}`)];
-  if(!patterns.some(p=>p.test(normalizedDateQuote)))throw Error('Date evidence does not substantiate the proposed original date');
+  // Adient publishes M/D/YY; require matching dates in both official article URLs.
+  let adientShortDate=false;
+  try{
+    const original=new URL(raw.url),fetched=new URL(page.url);
+    const datedPath=`/${year}/${String(month).padStart(2,'0')}/${String(day).padStart(2,'0')}/`;
+    const officialDatedUrl=u=>u.protocol==='https:'&&!u.username&&!u.password&&!u.port&&['adient.com','www.adient.com'].includes(u.hostname)&&u.pathname.includes(datedPath);
+    const validCalendarDate=/^\d{4}-\d{2}-\d{2}$/.test(date)&&new Date(`${date}T00:00:00Z`).toISOString().slice(0,10)===date;
+    adientShortDate=validCalendarDate&&officialDatedUrl(original)&&officialDatedUrl(fetched)&&new RegExp(`^${month<10?'0?':''}${month}/${day<10?'0?':''}${day}/${String(year).slice(-2)}$`).test(normalizedDateQuote);
+  }catch{}
+  if(!patterns.some(p=>p.test(normalizedDateQuote))&&!adientShortDate)throw Error('Date evidence does not substantiate the proposed original date');
   if(raw.aiRelation==='direct'&&!/\bartificial intelligence\b|\bmachine learning\b|\bdeep learning\b|\bgenerative ai\b|\bai\b|人工智能|机器学习|深度学习|生成式/i.test(quote))throw Error('Direct AI classification needs explicit AI wording in the original evidence quote, not only navigation or related links');
   return{url:page.url,sourceHash:page.sha256,evidenceQuote:quote,dateEvidenceQuote:dateQuote};
 }

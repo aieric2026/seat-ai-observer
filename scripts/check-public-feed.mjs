@@ -1,10 +1,9 @@
 import { readFile } from 'node:fs/promises';
-import { parsePublicFeed } from '../src/data.ts';
+import { parsePublicFeed, parseNewsData, mergePublicFeed } from '../src/data.ts';
 
 const feed = JSON.parse(await readFile(new URL('../public/data/verified.json', import.meta.url), 'utf8'));
 const archive = JSON.parse(await readFile(new URL('../public/data/news.json', import.meta.url), 'utf8'));
-const existing = new Set(archive.articles.map(a => new URL(a.url).href));
-for (const article of parsePublicFeed(feed)) {
-  if (existing.has(new URL(article.url).href)) throw Error('Article already in public archive: ' + article.url);
-}
-console.log('Public feed verified:', feed.length, 'articles');
+const articles = mergePublicFeed(parseNewsData(archive).articles, parsePublicFeed(feed));
+// Both authenticated updaters may discover the same original. The archive takes
+// precedence, exactly as in the UI; an overlap must not block future publication.
+console.log('Public feed verified:', feed.length, 'supplemental articles;', articles.length, 'unique articles');

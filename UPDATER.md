@@ -41,7 +41,9 @@ node scripts/update.mjs --collect-only
 node scripts/update.mjs --publish-only
 ```
 
-推送只暂存 `data/news.json` 与 `public/data/news.json`，发现其他已暂存文件时拒绝提交。origin 必须与配置仓库完全匹配；Git 使用已有凭据管理器，禁止交互弹窗或在命令/文件中放 Token。推送后最多等待15分钟，反复读取公开 Pages 的数据版本指纹、runId与条目数量，三者一致才记发布成功。
+推送只暂存 `data/news.json` 与 `public/data/news.json`，发现其他已暂存文件时拒绝提交。origin 必须与配置仓库完全匹配；Git 使用已有凭据管理器，禁止交互弹窗或在命令/文件中放 Token。推送后最多等待15分钟，反复读取公开 Pages 的文章归档，核对完整公开文章字段的 SHA256 内容指纹，并确认 `runs:[]`、`settings:{}`、无运行元数据。内容一致才记发布成功；同样条数但正文不同也会拒绝通过。
+
+公开站点不包含本机 runId、dataVersion 或运行日志。`.runtime/last-published.json` 仅在本机保存这些审计信息、`publicArchiveSha256` 和 `verificationMode: public-article-content-sha256`。若本次没有新增，公开内容可能与上次相同；此时验证证明推送成功且公开文章一致，不单凭内容指纹断言某个新提交的构建已完成。
 
 `.runtime/last-collection.json` 是真实本机采集结果，`.runtime/last-published.json` 是 Pages 实际读回结果。二者必须指向同一 runId，才允许安装每日任务：
 
@@ -60,6 +62,7 @@ node scripts/update.mjs --publish-only
 - 本地研究/源核验失败：查看 `.runtime/last-failure.json` 与对应 `.runtime/research/<runId>/`，原网站保留此前数据；任务自动重试。
 - 已采集但 Git/Pages 失败：使用 `node scripts/update.mjs --publish-only` 重试，不重复收集同一 runId。
 - Codex 桌面更新清除了旧版本路径：runner 会从当前官方安装的 `AppData/Local/OpenAI/Codex/bin` 重新找现有 codex.exe；仍找不到则明确失败，重新执行 Configure-Local。
+- Git 原安装路径失效：每次发布先实际运行 `git --version`，优先检查本机配置，再查 PATH 中的绝对路径、已安装 Git、Codex runtime、MinGit 与 WorkBuddy 当前版本目录。可用路径与版本记录在 `.runtime/logs/git-resolution.json`；全部不可用则明确失败并保留资讯，不下载软件、不复制凭据。
 - 本机路径变动：在新位置重新安装依赖、配置并注册任务；不要只移动文件后沿用旧任务路径。
 - 访问源失败、没有合格新增或时间窗不符不会伪造文章；`partial` 表示明确的覆盖缺口。
 

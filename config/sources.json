@@ -11,7 +11,7 @@
   {"name":"Covestro","domain":"covestro.com","url":"https://www.covestro.com/press/","focus":["发泡","面套"]},
   {"name":"Lectra","domain":"lectra.com","url":"https://www.lectra.com/en/library","focus":["面套"]},
   {"name":"Komax","domain":"komaxgroup.com","url":"https://www.komaxgroup.com/en/stories","focus":["线束"]},
-  {"name":"Infineon","domain":"infineon.com","url":"https://www.infineon.com/news","focus":["电机","开关","控制器"]},
+  {"name":"Infineon","domain":"infineon.com","url":"https://www.infineon.com/about/press","focus":["电机","开关","控制器"]},
   {"name":"Texas Instruments","domain":"ti.com","url":"https://www.ti.com/about-ti/newsroom.html","focus":["电机","开关","控制器"]},
   {"name":"Johnson Electric","domain":"johnsonelectric.com","url":"https://www.johnsonelectric.com/en/news-and-events","focus":["电机","执行器","开关"]},
   {"name":"Buehler Motor","domain":"buehlermotor.com","url":"https://www.buehlermotor.com/","focus":["电机","执行器"]}

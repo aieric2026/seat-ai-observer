@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import {verifyEvidence} from './news-lib.mjs';
+
+// Synthetic, offline fixtures reproduce the official page's visible date format.
+const url='https://www.adient.com/media/news/2026/11/17/adients-modugo-seat-receives-three-industry-awards-in-2026/';
+const evidenceQuote='Throughout 2026, the seat picked up several industry awards';
+const article={url,publishedAt:'2026-11-17',aiRelation:'adjacent',evidenceQuote,dateEvidenceQuote:'11/17/26'};
+const page={url,html:`<span class="post-date">11/17/26</span><p>${evidenceQuote}</p>`,text:`11/17/26 ${evidenceQuote}`,sha256:'synthetic-offline-fixture'};
+let checks=0;
+const accepted=(raw=article,fetched=page)=>{assert.equal(verifyEvidence(raw,fetched).sourceHash,page.sha256);checks++;};
+const rejected=(raw=article,fetched=page)=>{assert.throws(()=>verifyEvidence(raw,fetched));checks++;};
+accepted();
+accepted({...article,url:url.replace('www.adient.com','adient.com')},{...page,url:url.replace('www.adient.com','adient.com')});
+rejected({...article,url:url.replace('adient.com','example.com')},{...page,url:url.replace('adient.com','example.com')});
+rejected({...article,url:url.replace('www.adient.com','news.adient.com')},{...page,url:url.replace('www.adient.com','news.adient.com')});
+rejected({...article,url:url.replace('adient.com','adient.com.evil.test')});
+rejected({...article,url:url.replace('/2026/11/17/','/2026/11/16/')});
+rejected(article,{...page,url:url.replace('/2026/11/17/','/2026/11/18/')});
+rejected({...article,url:'https://www.adient.com/article?date=/2026/11/17/'});
+rejected({...article,publishedAt:'2025-11-17',url:url.replace('/2026/','/2025/')},{...page,url:url.replace('/2026/','/2025/')});
+rejected({...article,dateEvidenceQuote:'11/17/25'},{...page,text:`11/17/25 ${evidenceQuote}`,html:'<time>11/17/25</time>'});
+rejected({...article,publishedAt:'2026-11-18'});
+rejected({...article,dateEvidenceQuote:'17/11/26'},{...page,text:`17/11/26 ${evidenceQuote}`,html:'<time>17/11/26</time>'});
+rejected({...article,dateEvidenceQuote:'011/17/26'},{...page,text:`011/17/26 ${evidenceQuote}`,html:'<time>011/17/26</time>'});
+rejected({...article,dateEvidenceQuote:'11/017/26'},{...page,text:`11/017/26 ${evidenceQuote}`,html:'<time>11/017/26</time>'});
+rejected({...article,dateEvidenceQuote:'Published 11/17/26'},{...page,text:`Published 11/17/26 ${evidenceQuote}`,html:'<time>Published 11/17/26</time>'});
+rejected(article,{...page,text:evidenceQuote,html:`<p>${evidenceQuote}</p>`});
+rejected(article,{...page,text:'11/17/26',html:'<time>11/17/26</time>'});
+rejected({...article,publishedAt:'2026-11-31',url:url.replace('/11/17/','/11/31/'),dateEvidenceQuote:'11/31/26'},{...page,url:url.replace('/11/17/','/11/31/'),text:`11/31/26 ${evidenceQuote}`,html:'<time>11/31/26</time>'});
+rejected({...article,url:url.replace('https:','http:')},{...page,url:url.replace('https:','http:')});
+rejected({...article,url:url.replace('https://','https://user:synthetic@')});
+rejected({...article,url:url.replace('adient.com','adient.com:8443')});
+accepted({...article,url:'https://example.com/article',dateEvidenceQuote:'November 17, 2026'},{...page,url:'https://example.com/article',text:`November 17, 2026 ${evidenceQuote}`,html:'<time>November 17, 2026</time>'});
+console.log(JSON.stringify({ok:true,checks,note:'Offline synthetic date-evidence checks; no collection, runtime state or public data was written.'}));
