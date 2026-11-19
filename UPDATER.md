@@ -41,9 +41,9 @@ node scripts/update.mjs --collect-only
 node scripts/update.mjs --publish-only
 ```
 
-推送只暂存 `data/news.json` 与 `public/data/news.json`，发现其他已暂存文件时拒绝提交。origin 必须与配置仓库完全匹配；Git 使用已有凭据管理器，禁止交互弹窗或在命令/文件中放 Token。推送后最多等待15分钟，反复读取公开 Pages 的文章归档，核对完整公开文章字段的 SHA256 内容指纹，并确认 `runs:[]`、`settings:{}`、无运行元数据。内容一致才记发布成功；同样条数但正文不同也会拒绝通过。
+推送只暂存 `data/news.json` 与 `public/data/news.json`，发现其他已暂存文件时拒绝提交。origin 必须与配置仓库完全匹配；Git 使用已有凭据管理器，禁止交互弹窗或在命令/文件中放 Token。推送后最多等待15分钟，反复读取公开 Pages 的文章归档，核对完整公开文章字段的 SHA256 内容指纹，并确认 `runs:[]`、`settings:{}`、无运行元数据；随后读取同源 `deployment.json`，严格核对部署 commit 等于本次推送的完整提交 SHA。文章内容与部署提交均一致才记发布成功；同样条数但正文不同也会拒绝通过。
 
-公开站点不包含本机 runId、dataVersion 或运行日志。`.runtime/last-published.json` 仅在本机保存这些审计信息、`publicArchiveSha256` 和 `verificationMode: public-article-content-sha256`。若本次没有新增，公开内容可能与上次相同；此时验证证明推送成功且公开文章一致，不单凭内容指纹断言某个新提交的构建已完成。
+公开站点不包含本机 runId、dataVersion 或运行日志。GitHub Actions 在构建后从 `GITHUB_SHA` 生成 `deployment.json`，仅公开仓库本来就公开的 commit，拒绝非40位十六进制值。`.runtime/last-published.json` 仅在本机保存运行审计信息，以及 `publicArchiveSha256`、`verifiedDeploymentCommit` 和 `verificationMode: public-article-content-and-deployment-commit`。即使本次没有新增，也要等实际部署 commit 一致，不能只凭相同文章内容提前判成功。
 
 `.runtime/last-collection.json` 是真实本机采集结果，`.runtime/last-published.json` 是 Pages 实际读回结果。二者必须指向同一 runId，才允许安装每日任务：
 

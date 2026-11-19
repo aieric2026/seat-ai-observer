@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import {ROOT,command,sleep,atomicJson,sha256} from './news-lib.mjs';
 import {resolveGit} from './git-runtime.mjs';
+import {verifyDeploymentMarker} from './write-deployment-marker.mjs';
 
 const PUBLIC_ARTICLE_FIELDS=['id','title','summary','category','relatedCategories','aiRelation','sourceName','url','publishedAt','collectedAt','evidenceNote','tags'];
 export function publicArchive(data){return {articles:data.articles.map(article=>Object.fromEntries(PUBLIC_ARTICLE_FIELDS.map(key=>[key,article[key]]))),runs:[],settings:{}};}
@@ -35,7 +36,8 @@ export async function publishNews(data,options,{runId}={}){
   await command(git,['push','origin','HEAD:main'],{timeoutMs:120000,logFile:path.join(ROOT,'.runtime/logs/git-push.log')});
   const expected=data.publication?.dataVersion;if(!/^[a-f0-9]{64}$/.test(expected??''))throw Error('Missing data-version fingerprint');
   const expectedPublicHash=sha256(JSON.stringify(publicArchive(data)));
-  const dataUrl=new URL('data/news.json',url.href.endsWith('/')?url.href:url.href+'/');
+  const baseUrl=url.href.endsWith('/')?url.href:url.href+'/';
+  const dataUrl=new URL('data/news.json',baseUrl),deploymentUrl=new URL('deployment.json',baseUrl);
   const deadline=Date.now()+options.deploymentTimeoutMinutes*60000;let lastError='Not yet deployed';
   while(Date.now()<deadline){
     try{
@@ -44,7 +46,11 @@ export async function publishNews(data,options,{runId}={}){
       if(!response.ok)throw Error(`Pages HTTP ${response.status}`);
       const live=await response.json();
       const verification=verifyPublicArchive(live,data);
-      const status={ok:true,runId,commit,dataVersion:expected,...verification,articles:live.articles.length,verifiedAt:new Date().toISOString(),url:options.pagesUrl};
+      const markerUrl=new URL(deploymentUrl);markerUrl.searchParams.set('verify',commit);markerUrl.searchParams.set('t',String(Date.now()));
+      const markerResponse=await fetch(markerUrl,{headers:{'Cache-Control':'no-cache'},signal:AbortSignal.timeout(20000)});
+      if(!markerResponse.ok)throw Error(`Pages deployment marker HTTP ${markerResponse.status}`);
+      const verifiedDeploymentCommit=verifyDeploymentMarker(await markerResponse.json(),commit);
+      const status={ok:true,runId,commit,dataVersion:expected,...verification,verifiedDeploymentCommit,verificationMode:'public-article-content-and-deployment-commit',articles:live.articles.length,verifiedAt:new Date().toISOString(),url:options.pagesUrl};
       await atomicJson(path.join(ROOT,'.runtime/last-published.json'),status);return status;
     }catch(error){lastError=error.message;}
     await sleep(20000);
