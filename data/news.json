@@ -1,6 +1,178 @@
 {
   "articles": [
     {
+      "id": "n_e4d00ceb366620893fa34c8e",
+      "url": "https://www.adient.com/media/news/2026/11/17/adients-modugo-seat-receives-three-industry-awards-in-2026/",
+      "title": "Adient披露ModuGo模块化座椅2026年获奖进展",
+      "summary": "Adient宣布ModuGo座椅在2026年获得三项行业奖项。该座椅方案于2025年推出，以模块化设计支持产品定制和敏捷开发。本次属于产品及获奖动态，原文未披露AI应用。",
+      "category": "整椅",
+      "relatedCategories": [],
+      "aiRelation": "adjacent",
+      "sourceName": "Adient",
+      "publishedAt": "2026-11-17",
+      "collectedAt": "2026-11-19T01:06:51.280Z",
+      "evidenceNote": "事实与原文日期置信度高。原文可见日期为美式短格式11/17/26，与同一官方文章URL中的/2026/11/17/一致。公告列出2026年三项行业奖；ModuGo于2025年推出，不能将此次获奖写为2026年首次发布。模块化整椅设计与座椅行业直接相关，但原文无AI应用证据，故归为相邻产业技术。获奖与厂商设计宣称不等同于客户量产验收、经过独立验证的效率收益或ROI。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "ModuGo",
+        "模块化座椅",
+        "产品获奖",
+        "整椅设计",
+        "非AI证据"
+      ]
+    },
+    {
+      "id": "n_be4d635539d50737ed5d39bb",
+      "url": "https://www.lectra.com/en/library/why-inconsistent-performance-across-production-sites-puts-margins-at-risk",
+      "title": "Lectra讨论以统一实时KPI改善多工厂汽车面料裁剪",
+      "summary": "Lectra介绍汽车裁剪工厂统一KPI、实时数据和跨工厂对标的方法，将Algopex的绩效可视化与Vector Automotive iP裁剪执行结合，支持材料利用与产能改善。该文章聚焦裁剪数字化基础，未提供明确AI应用证据。",
+      "category": "面套",
+      "relatedCategories": [],
+      "aiRelation": "enabling",
+      "sourceName": "Lectra",
+      "publishedAt": "2026-11-16",
+      "collectedAt": "2026-11-19T01:06:49.640Z",
+      "evidenceNote": "正文与日期交叉证据置信度高。文章页头标Edited on November 16, 2026；同一原文HTML的官方导航卡片精确链接该标题及URL，另外明确标Published on November 16, 2026，time datetime为2026-11-16T12:00:00Z，因此未仅用编辑日期冒充首次发布日期。内容属于汽车面料裁剪的实时数据、统一指标与跨工厂改善基础，正文未提供AI算法应用证据。Tesca的16工厂及改善数字为Lectra披露的客户案例，未作独立验证，不能推导为所有座椅面套工厂可实现的收益或本项目ROI。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "裁剪数字化",
+        "实时KPI",
+        "跨工厂对标",
+        "Algopex",
+        "Vector Automotive iP",
+        "非AI证据"
+      ]
+    },
+    {
+      "id": "n_ee412b723a21756622203102",
+      "url": "https://www.lear.com/newsroom/lear-wins-2026-automotive-news-pace-award-for-modular-thermal-comfort-technologies",
+      "title": "Lear 模块化座椅热舒适系统获 PACE 奖",
+      "summary": "Lear 的获奖方案把加热、通风和按摩等功能组合成模块。ComfortMax 将相关功能集成进座椅面套，以支持自动化装配。",
+      "category": "核心件",
+      "relatedCategories": [
+        "整椅",
+        "面套"
+      ],
+      "aiRelation": "adjacent",
+      "sourceName": "Lear",
+      "publishedAt": "2026-11-18",
+      "collectedAt": "2026-11-19T01:01:44.849Z",
+      "evidenceNote": "高置信。公告确认获奖和产品集成方式，称方案于2024年首次推出，并获17家车企的47个车型项目选用。项目选用与实际量产分别看待，各项目的投产及验收状态待确认。正文明确写到自动化装配，AI应用未见披露。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "热舒适",
+        "模块化",
+        "面套集成",
+        "自动化装配",
+        "PACE奖"
+      ]
+    },
+    {
+      "id": "n_58bb91e0bd1138c0cec08b30",
+      "url": "https://www.toyota-boshoku.com/jp/news/261117.php",
+      "title": "丰田纺织开发玻纤增强骨架桶椅，获 GRMN Corolla 采用",
+      "summary": "丰田纺织首次开发面向市售车型的全桶式座椅，采用玻璃纤维增强塑料骨架，以减轻重量并让靠背更薄。公告称该座椅已获计划于2027年1月上旬上市的 GRMN Corolla 采用。",
+      "category": "整椅",
+      "relatedCategories": [
+        "骨架"
+      ],
+      "aiRelation": "adjacent",
+      "sourceName": "Toyota Boshoku",
+      "publishedAt": "2026-11-17",
+      "collectedAt": "2026-11-19T01:01:44.849Z",
+      "evidenceNote": "高置信。官方原文确认材料、开发完成和车型采用，整车上市日期是当时的计划。座椅批量交付情况及减重幅度待确认。AI应用未见披露。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "全桶式座椅",
+        "GFRP",
+        "轻量化",
+        "车型采用"
+      ]
+    },
+    {
+      "id": "n_7afc6d8cb3d67f35e583f6b9",
+      "url": "https://www.komaxgroup.com/en/media-releases/komax-group-collaborates-with-nvent",
+      "title": "Komax与nVent合作推广Zeta自动导线加工设备",
+      "summary": "Komax与nVent达成工业控制柜布线合作。nVent计划将Zeta系列导线加工设备纳入销售流程，Komax将在展会展示Zeta 620。该设备路线可为座椅线束的导线下料、剥皮和端接工序提供参考。",
+      "category": "线束",
+      "relatedCategories": [],
+      "aiRelation": "adjacent",
+      "sourceName": "Komax",
+      "publishedAt": "2026-11-13",
+      "collectedAt": "2026-11-18T02:00:06.515Z",
+      "evidenceNote": "原文披露商业合作及展出计划，应用对象是工业控制柜。座椅线束关联属于工序层面的类比，汽车端子兼容性、座椅线束验证、量产部署和AI功能均未获原文证实。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "导线加工",
+        "Zeta 620",
+        "布线自动化",
+        "工业控制柜"
+      ]
+    },
+    {
+      "id": "n_c81f45a2d6b47c603e1a22ec",
+      "url": "https://www.infineon.com/our-stories/empowering-robots",
+      "title": "英飞凌介绍物理AI机器人的执行器与控制架构",
+      "summary": "英飞凌介绍物理AI机器人所需的电源、电机控制、感知及安全架构，并说明面向机器人执行器的集成方案和参考设计。其精密运动与触觉反馈思路可供座椅工厂机器人抓取、装配方案研究参考；原文未报告座椅应用。",
+      "category": "执行器",
+      "relatedCategories": [
+        "电机",
+        "控制器"
+      ],
+      "aiRelation": "direct",
+      "sourceName": "Infineon",
+      "publishedAt": "2026-11-16",
+      "collectedAt": "2026-11-17T02:00:03.516Z",
+      "evidenceNote": "原文日期及AI技术表述已核实，置信度高。正文明确讨论AI模型与机器人电机控制、传感及功率器件的配合，并称参考设计可供机器人开发者集成。属于技术架构与方案介绍，不是集团AI治理公告，也未证明该参考设计在座椅企业已部署或座椅产品已量产。对座椅制造抓取、装配的参考意义为研究判断，置信度中；不能据此推导座椅执行器车规适配、效果、ROI或验收状态。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "物理AI",
+        "机器人",
+        "执行器控制",
+        "触觉反馈",
+        "参考设计",
+        "跨行业技术参考",
+        "座椅应用未证实"
+      ]
+    },
+    {
+      "id": "n_6ad423b0d418041a41ef9680",
+      "url": "https://www.magna.com/stories/news-press-release/2026/magna-outlines-path-to-turn-enterprise-strength-into-lasting-value-at-investor-day",
+      "title": "麦格纳披露面向2029年的集团制造AI扩展计划",
+      "summary": "麦格纳在投资者日提出扩大数据互联、自动化与AI应用，计划到2029年覆盖代表集团约70%销售额的工厂。该计划可为座椅制造数字化提供集团层面的观察线索，原文未披露座椅工厂专属部署或效果。",
+      "category": "整椅",
+      "relatedCategories": [],
+      "aiRelation": "direct",
+      "sourceName": "Magna",
+      "publishedAt": "2026-11-11",
+      "collectedAt": "2026-11-13T03:11:00.830Z",
+      "evidenceNote": "置信度：高，官方正文明确提及AI，页面及正文均标示2026-11-11。证据属于集团制造运营扩展计划；70%指相关工厂代表的销售额占比，并非工厂数量占比或已经实现的AI覆盖率。未披露具体AI模型、座椅工厂名单、座椅产品研发验证、量产验收或可单独归因于AI的ROI。主分类整椅用于产业归档，座椅业务实际受益范围尚未核实。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "AI",
+        "制造运营",
+        "数据互联",
+        "自动化",
+        "集团部署计划",
+        "2029目标",
+        "座椅专项部署未披露"
+      ]
+    },
+    {
+      "id": "n_a5f536a4f880770a5661b7d9",
+      "url": "https://www.basf.com/global/en/media/news-releases/2026/11/p-26-194",
+      "title": "BASF美国MDI扩建项目落成，关注座椅发泡原料供应",
+      "summary": "BASF于11月11日宣布美国Geismar基地新MDI设施落成，扩建后基地年产能接近翻倍至约60万吨。MDI是聚氨酯原料，该进展可供座椅发泡供应链跟踪，但原文未披露座椅专用牌号、客户或供货分配。",
+      "category": "发泡",
+      "relatedCategories": [],
+      "aiRelation": "adjacent",
+      "sourceName": "BASF",
+      "publishedAt": "2026-11-11",
+      "collectedAt": "2026-11-12T02:00:08.641Z",
+      "evidenceNote": "原文及发布日期已核实，置信度高。公告为生产设施落成与产能扩建，不能据此确认新增产能的实际利用率、产品验收或座椅客户量产供货。原文提及先进数字化，但没有明确AI应用证据。对座椅的意义属于聚氨酯发泡上游供应链推断，置信度中；不能推导出座椅材料性能提升、采购降价或ROI。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "MDI",
+        "聚氨酯",
+        "发泡原料",
+        "北美供应链",
+        "设施落成",
+        "非AI证据"
+      ]
+    },
+    {
       "id": "n_4c414d733c8f8ca634a85158",
       "url": "https://www.ti.com/en-us/about-ti/newsroom/news-releases/2026/2026-11-10-ti-redefines-embedded-development-with-agentic-ai-in-its-ccstudio-ecosystem-empowering-engineers-to-accelerate-innovation",
       "title": "TI将智能体AI接入嵌入式软件迁移与调试",
@@ -515,6 +687,97 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-11-19-1000",
+      "startedAt": "2026-11-19T01:01:44.868Z",
+      "completedAt": "2026-11-19T01:08:01.612Z",
+      "status": "partial",
+      "addedCount": 4,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA 官方新闻入口返回 HTTP 403，未能读取本期新闻列表。",
+        "Covestro 官方新闻列表和 CARBEX 公告原文返回 HTTP 403，替代官方地址也未能读取。",
+        "Johnson Electric 候选新闻入口不可访问，替代公司新闻与投资者公告页面未返回可读列表。",
+        "Hyundai Transys 英文、韩文新闻入口可读取页面框架，但未返回可核查的近期列表。已补查官方博客新闻分类。",
+        "Infineon 配置入口返回 HTTP 404，已改查可读取的官方新闻中心及相关原文。",
+        "GRAMMER 配置入口未能读取，已读德文官方新闻列表和正文。用于复核日期的官方PDF未能读取。"
+      ],
+      "note": "本次复核13家官方来源，确认新增4条，6项来源访问或候选核验受限。含独立补查核验的2条座椅及面套资讯，已保留原文日期与证据说明。"
+    },
+    {
+      "runId": "daily-2026-11-18-1000",
+      "startedAt": "2026-11-18T02:00:06.586Z",
+      "completedAt": "2026-11-18T02:06:32.160Z",
+      "status": "partial",
+      "addedCount": 1,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA的https://www.forvia.com/en/press及官网首页返回403，未取得可核查的当期发布列表。",
+        "Covestro的https://www.covestro.com/press/及CARBEX英德文稿件在直接读取时返回403，未取得候选原文。",
+        "Johnson Electric的https://www.johnsonelectric.com/en/news-and-events无法访问，替代公告页未返回可读公告列表。",
+        "Hyundai Transys的https://www.hyundai-transys.com/en/未返回可读正文，已改查官方韩文博客。",
+        "GRAMMER的https://www.grammer.com/en/company/newsroom/无法访问，已改查德文新闻列表及稿件，稿件所附PDF未能读取。",
+        "Infineon的https://www.infineon.com/news返回404，已通过官网替代新闻入口核查。",
+        "https://www.adient.com/media/news/2026/11/17/adients-modugo-seat-receives-three-industry-awards-in-2026/: Date evidence does not substantiate the proposed original date",
+        "https://www.grammer.com/pressemitteilungen/artikel/grammer-staerkt-standort-haselmuehl-mit-zukunftsweisender-technologie-und-staatlicher-foerderung/: Original date evidence was not found on the fetched source"
+      ],
+      "note": "本次复核13家官方来源，确认新增1条，8项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
+      "runId": "daily-2026-11-17-1000",
+      "startedAt": "2026-11-17T02:00:03.559Z",
+      "completedAt": "2026-11-17T02:04:15.272Z",
+      "status": "partial",
+      "addedCount": 1,
+      "checkedSources": 11,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403，未能读取官方列表。",
+        "GRAMMER：https://www.grammer.com/en/company/newsroom/ 工具报告不可访问，未能读取。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 返回页面但无可读正文，未能充分检查新闻。",
+        "Covestro：https://www.covestro.com/press/ 及 https://solutions.covestro.com/press 返回403；CARBEX候选原文 https://www.covestro.com/press/covestro-and-fraunhofer-umsicht-turn-end-of-life-vehicle-waste-into-basic-chemicals/ 同样返回403，未收录。",
+        "Lectra：https://www.lectra.com/en/library/why-inconsistent-performance-across-production-sites-puts-margins-at-risk 多次原文读取均报Cache miss；仅成功读取列表，未收录该候选。",
+        "Infineon：配置入口 https://www.infineon.com/news 返回404，已改读官方 https://www.infineon.com/about/press 。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 工具报告不可访问，未能充分检查新闻。",
+        "Magna：Stories及News页面可读，但抓取正文未呈现新闻条目列表，新增检查完整性受限。"
+      ],
+      "note": "本次复核11家官方来源，确认新增1条，8项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
+      "runId": "daily-2026-11-13-1000",
+      "startedAt": "2026-11-13T03:11:00.880Z",
+      "completedAt": "2026-11-13T03:14:46.309Z",
+      "status": "partial",
+      "addedCount": 1,
+      "checkedSources": 11,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403；补查 https://www.forvia.com/en/press-releases 仍不可访问，未完成原文核查。",
+        "GRAMMER：https://www.grammer.com/en/company/newsroom/ 及替代新闻入口均无法通过网页工具访问。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 返回零行可读内容；搜索未取得可核实的时间窗内新闻原文。",
+        "Covestro：https://www.covestro.com/press/ 和 https://www.covestro.com/press 返回403；https://solutions.covestro.com/press 亦不可访问。搜索结果未替代原文核验。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 不可访问；替代公司新闻及产品新闻列表仅返回JavaScript提示，无法读取新闻列表。",
+        "Infineon配置入口 https://www.infineon.com/news 返回404；已通过 https://www.infineon.com/about/press 完成替代核查。"
+      ],
+      "note": "本次复核11家官方来源，确认新增1条，6项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
+      "runId": "daily-2026-11-12-1000",
+      "startedAt": "2026-11-12T02:00:08.685Z",
+      "completedAt": "2026-11-12T02:02:25.007Z",
+      "status": "partial",
+      "addedCount": 1,
+      "checkedSources": 11,
+      "failures": [
+        "FORVIA：https://www.forvia.com/en/press 返回403，未能读取新闻列表。",
+        "Covestro：https://www.covestro.com/press/ 及无末尾斜杠版本均返回403；搜索结果未作为原文核验依据。",
+        "GRAMMER：https://www.grammer.com/en/company/newsroom/ 工具无法访问。",
+        "Johnson Electric：https://www.johnsonelectric.com/en/news-and-events 工具无法访问。",
+        "Hyundai Transys：https://www.hyundai-transys.com/en/ 返回页面无可读正文，未完成新闻列表核查。",
+        "Magna：Stories及News页面可读取，但未提取出新闻条目列表，时间窗覆盖不完整。",
+        "Komax：Stories页面可读取，但未提取出文章条目列表，线束类别核查存在缺口。",
+        "Infineon：配置入口https://www.infineon.com/news返回404；已改读官方https://www.infineon.com/about/press。"
+      ],
+      "note": "本次复核11家官方来源，确认新增1条，8项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
       "runId": "daily-2026-11-11-1000",
       "startedAt": "2026-11-11T02:00:06.906Z",
       "completedAt": "2026-11-11T02:03:21.470Z",
@@ -728,10 +991,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-11-11T02:03:21.470Z"
+    "lastSuccessfulCollectionAt": "2026-11-19T01:08:01.612Z"
   },
-  "generatedAt": "2026-11-11T02:03:21.470Z",
+  "generatedAt": "2026-11-19T01:08:01.612Z",
   "publication": {
-    "dataVersion": "7cbab2843fa653b1e34fadddfa8c3b7302bd205219bea0eb08ed558470f5ffb4"
+    "dataVersion": "5319f40f4c8246bc1e5d4c16fad1ca5367fc364008f439fcd39bfe02465b18a9"
   }
 }
