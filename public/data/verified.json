@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "title": "Leggett Dynamics智能无刷座椅电机获PACE Pilot奖：支持车级ECU直连执行器",
+    "summary": "Leggett Dynamics宣布，其Smart Brushless Motor获得2026年Automotive News PACE Pilot奖。该电机可在有或没有座椅级ECU的架构下运行，使车级ECU直接与各座椅执行器通信，面向集中式和区域式电子电气架构，并支持软件更新。公司同时披露其在体积、重量、线束复杂度、NVH、耐久和EMC方面的设计目标，乘员侧表现包括更安静平顺的调节和更快的记忆位置调用。",
+    "category": "电机",
+    "relatedCategories": [
+      "执行器",
+      "控制器",
+      "线束"
+    ],
+    "aiRelation": "enabling",
+    "sourceName": "Leggett Dynamics 官方",
+    "url": "https://leggettdynamics.com/news/leggett-dynamics-wins-2026-automotive-news-pace-pilot-award-for-smart-brushless-motor",
+    "publishedAt": "2026-11-18",
+    "evidenceNote": "Leggett Dynamics官方页面标注2026-11-18，正文明确座椅级ECU可选架构、车级ECU与执行器直连、集中/区域架构及软件更新能力。原文未披露AI或机器学习，因此归为智能化基础；本次新事件是PACE Pilot获奖，不推断已经量产定点或应用AI。"
+  },
+  {
+    "title": "계양전기获现代五款车型座椅电机供应商资格：覆盖滑轨、高度与靠背调节",
+    "summary": "계양전기（Keyang Electric Machinery）在韩国DART披露，已被现代汽车选为五款车型的汽车部件供应商，涉及中大型轿车、中大型RV及电动车，品目为座椅滑轨、高度和靠背调节电机总成。公司说明，实际供货及销售将经后续确定的一级座椅模块供应商进行，车型和品目也可能随客户生产计划与项目进度调整；公告未披露金额、数量或量产时间。",
+    "category": "电机",
+    "relatedCategories": [
+      "执行器"
+    ],
+    "aiRelation": "adjacent",
+    "sourceName": "계양전기 DART 官方披露",
+    "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800155",
+    "publishedAt": "2026-11-17",
+    "evidenceNote": "韩国DART发行人原始披露页面标注2026-11-17，正文列出最终需求方为现代汽车、五款车型及SEAT MOTOR ASSY（SLIDE、HEIGHT、RECLINER），并注明确认日为2026-11-16。原文未披露AI或机器学习，因此归为相邻产业技术；供应资格不等于已开始供货，实际交易仍取决于后续一级供应商及客户项目计划。"
+  }
+]
