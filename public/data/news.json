@@ -1,6 +1,27 @@
 {
   "articles": [
     {
+      "id": "n_b586358b4eea4a594314c42c",
+      "url": "https://www.infineon.com/press-release/2026/infpr202611-032",
+      "title": "英飞凌牵头的声学传感研发验证非接触超声无损检测",
+      "summary": "英飞凌公布欧盟 Listen2Future 项目结题。工业质检方向以紧凑型压电微机械超声换能器检测材料变化和微小缺陷，可为座椅骨架零件的非接触质检提供工艺参考。",
+      "category": "骨架",
+      "relatedCategories": [
+        "核心件"
+      ],
+      "aiRelation": "adjacent",
+      "sourceName": "Infineon",
+      "publishedAt": "2026-11-17",
+      "collectedAt": "2026-11-20T02:00:09.697Z",
+      "evidenceNote": "证据阶段为研发结题及样机验证。原文明示项目使用基于AI的信号处理，并具体披露其在电网局部放电检测中的应用。工业无损检测段落确认使用超声换能器，未单独确认该检测样机使用AI。座椅骨架质检属于工艺迁移推断，置信度中。原文未披露座椅零件试验、产线部署或量产验收。 本机已重新读取原文并核对日期与引文。",
+      "tags": [
+        "超声无损检测",
+        "压电换能器",
+        "座椅骨架质检",
+        "研发样机"
+      ]
+    },
+    {
       "id": "n_e4d00ceb366620893fa34c8e",
       "url": "https://www.adient.com/media/news/2026/11/17/adients-modugo-seat-receives-three-industry-awards-in-2026/",
       "title": "Adient披露ModuGo模块化座椅2026年获奖进展",
@@ -687,6 +708,23 @@
   ],
   "runs": [
     {
+      "runId": "daily-2026-11-20-1000",
+      "startedAt": "2026-11-20T02:00:09.743Z",
+      "completedAt": "2026-11-20T02:07:01.219Z",
+      "status": "partial",
+      "addedCount": 1,
+      "checkedSources": 13,
+      "failures": [
+        "FORVIA 新闻中心 https://www.forvia.com/en/press 返回403，官网首页也返回403。",
+        "Covestro 新闻中心 https://www.covestro.com/press/ 及 CARBEX 英文、德文原文直读均返回403。",
+        "GRAMMER 配置的英文新闻入口不可访问，已改查德文官方新闻列表。Haselmühl 工装研发稿的官方 PDF 未能读取。",
+        "Hyundai Transys 英文官网首页未返回正文，已改查官方韩文博客新闻列表。",
+        "Johnson Electric 配置的新闻入口不可访问。官网公司新闻和产品新闻页面仅返回 JavaScript 加载提示。",
+        "Lectra 带筛选参数的备选列表未能读取，已核查公开主列表及相关候选原文。"
+      ],
+      "note": "本次复核13家官方来源，确认新增1条，6项来源访问或候选核验受限。已保留原文日期、来源与证据说明。"
+    },
+    {
       "runId": "daily-2026-11-19-1000",
       "startedAt": "2026-11-19T01:01:44.868Z",
       "completedAt": "2026-11-19T01:08:01.612Z",
@@ -991,10 +1029,10 @@
       "mode": "local",
       "verified": true
     },
-    "lastSuccessfulCollectionAt": "2026-11-19T01:08:01.612Z"
+    "lastSuccessfulCollectionAt": "2026-11-20T02:07:01.219Z"
   },
-  "generatedAt": "2026-11-19T01:08:01.612Z",
+  "generatedAt": "2026-11-20T02:07:01.219Z",
   "publication": {
-    "dataVersion": "5319f40f4c8246bc1e5d4c16fad1ca5367fc364008f439fcd39bfe02465b18a9"
+    "dataVersion": "22a66499811baf423232b478b6ef1792e1b47ed9584fb7c61e8242499ec47e41"
   }
 }
