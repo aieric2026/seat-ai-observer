@@ -3,11 +3,7 @@
     "title": "Leggett Dynamics智能无刷座椅电机获PACE Pilot奖：支持车级ECU直连执行器",
     "summary": "Leggett Dynamics宣布，其Smart Brushless Motor获得2026年Automotive News PACE Pilot奖。该电机可在有或没有座椅级ECU的架构下运行，使车级ECU直接与各座椅执行器通信，面向集中式和区域式电子电气架构，并支持软件更新。公司同时披露其在体积、重量、线束复杂度、NVH、耐久和EMC方面的设计目标，乘员侧表现包括更安静平顺的调节和更快的记忆位置调用。",
     "category": "电机",
-    "relatedCategories": [
-      "执行器",
-      "控制器",
-      "线束"
-    ],
+    "relatedCategories": ["执行器", "控制器", "线束"],
     "aiRelation": "enabling",
     "sourceName": "Leggett Dynamics 官方",
     "url": "https://leggettdynamics.com/news/leggett-dynamics-wins-2026-automotive-news-pace-pilot-award-for-smart-brushless-motor",
@@ -18,13 +14,44 @@
     "title": "계양전기获现代五款车型座椅电机供应商资格：覆盖滑轨、高度与靠背调节",
     "summary": "계양전기（Keyang Electric Machinery）在韩国DART披露，已被现代汽车选为五款车型的汽车部件供应商，涉及中大型轿车、中大型RV及电动车，品目为座椅滑轨、高度和靠背调节电机总成。公司说明，实际供货及销售将经后续确定的一级座椅模块供应商进行，车型和品目也可能随客户生产计划与项目进度调整；公告未披露金额、数量或量产时间。",
     "category": "电机",
-    "relatedCategories": [
-      "执行器"
-    ],
+    "relatedCategories": ["执行器"],
     "aiRelation": "adjacent",
     "sourceName": "계양전기 DART 官方披露",
     "url": "https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20261117800155",
     "publishedAt": "2026-11-17",
     "evidenceNote": "韩国DART发行人原始披露页面标注2026-11-17，正文列出最终需求方为现代汽车、五款车型及SEAT MOTOR ASSY（SLIDE、HEIGHT、RECLINER），并注明确认日为2026-11-16。原文未披露AI或机器学习，因此归为相邻产业技术；供应资格不等于已开始供货，实际交易仍取决于后续一级供应商及客户项目计划。"
+  },
+  {
+    "title": "Magna EcoSphere生物基座椅泡沫获PACE Pilot关注：可再生成分进入树脂与异氰酸酯体系",
+    "summary": "Magna在2026年Automotive News PACE Awards发布中披露，处于商业化前阶段的EcoSphere生物基座椅泡沫获得PACE Pilot Innovation to Watch。该体系把可再生资源引入树脂混合物及异氰酸酯组分；Magna称其可再生成分最高约20%，相较传统聚氨酯泡沫的二氧化碳生成量低约18%，同时保持高性能座椅泡沫所需属性。上述比例与减排数据均为企业披露，原文未给出独立第三方验证，也未说明已量产装车。",
+    "category": "发泡",
+    "relatedCategories": ["整椅"],
+    "aiRelation": "adjacent",
+    "sourceName": "Magna International",
+    "url": "https://www.magna.com/stories/news-press-release/2026/magna-earns-three-honors-at-2026-automotive-news-pace-awards",
+    "publishedAt": "2026-11-19",
+    "evidenceNote": "Magna官方稿件标注2026-11-19，并明确EcoSphere是pre-commercial的bio-based seating foam及PACE Pilot Innovation to Watch项目；文中给出最高20%可再生成分和18%较低CO2生成量的企业口径。原文未出现AI或机器学习，也未证明量产应用，因此标为相邻产业技术而非AI应用。"
+  },
+  {
+    "title": "Aptiv车内摄像头AOC获PACE奖：AI替代座椅内乘员感知硬件与线束",
+    "summary": "Aptiv的Advanced Occupancy Classification（AOC）获2026年Automotive News PACE Award。该方案以车内摄像头、人工智能与计算机视觉识别乘员体型、姿态和座位位置，为气囊展开策略提供信息，并以软件替代传统座椅内传感硬件及部分线束。Aptiv称其在FMVSS 208规定的测试用例中达到100%准确率、系统成本最多降低40%；这些数字属于企业在限定法规测试场景下的披露，不能外推为所有真实道路与乘员场景的准确率。",
+    "category": "核心件",
+    "relatedCategories": ["控制器", "线束", "整椅"],
+    "aiRelation": "direct",
+    "sourceName": "Aptiv",
+    "url": "https://www.aptiv.com/en/newsroom/article/aptiv-earns-multiple-2026-automotive-news-pace-awards",
+    "publishedAt": "2026-11-18",
+    "evidenceNote": "Aptiv官方稿件标注2026-11-18，并明确AOC由车内摄像头驱动，使用AI和computer vision按体型、姿态与座位位置分类乘员，且可取代in-seat sensing hardware and wiring。AI用途是乘员安全分类与气囊决策输入，并非座椅调节控制；准确率和成本数据为公司在所述FMVSS 208测试用例及方案口径下的声明。"
+  },
+  {
+    "title": "Autoliv座椅中心化Omni Safety获PACE Pilot认可：安全带、气囊与锁销协同保护躺姿乘员",
+    "summary": "Autoliv的Omni Safety概念获得2026年Automotive News PACE Pilot Innovation to Watch。该方案围绕座椅集成安全带、气囊和锁销装置，并与座椅及车辆接口协同，面向自动驾驶场景中的后仰坐姿。Autoliv称其可在保持舒适性的同时减少下潜，并降低头部、颈部、骨盆和腰椎受伤风险。官方稿件明确PACE Pilot项目处于可运行示范阶段、尚无商业合同，因此不能视为量产定点或完成整车验证。",
+    "category": "核心件",
+    "relatedCategories": ["整椅"],
+    "aiRelation": "adjacent",
+    "sourceName": "Autoliv",
+    "url": "https://www.autoliv.com/sites/autoliv/files/pr/202611180669-1.pdf",
+    "publishedAt": "2026-11-18",
+    "evidenceNote": "Autoliv官方PDF标注2026-11-18，说明Omni Safety把seatbelt、airbags和pin puller整合为seat-centric system，并面向reclined positions；稿件同时界定PACE Pilot为working pilot demonstration且not yet commercially contracted。原文未出现AI或机器学习，安全效果为企业表述，故标为相邻产业技术。"
   }
 ]
