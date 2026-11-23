@@ -53,5 +53,16 @@
     "url": "https://www.autoliv.com/sites/autoliv/files/pr/202611180669-1.pdf",
     "publishedAt": "2026-11-18",
     "evidenceNote": "Autoliv官方PDF标注2026-11-18，说明Omni Safety把seatbelt、airbags和pin puller整合为seat-centric system，并面向reclined positions；稿件同时界定PACE Pilot为working pilot demonstration且not yet commercially contracted。原文未出现AI或机器学习，安全效果为企业表述，故标为相邻产业技术。"
+  },
+  {
+    "title": "HDI America拟投4700万美元建座椅部件厂：泡沫垫、头枕与扶手产能落地佐治亚",
+    "summary": "美国佐治亚州政府宣布，现代工业旗下HDI America计划在坎德勒县建设约17.5万平方英尺的新工厂，投资4700万美元，并计划到2030年创造至少185个岗位。州政府原文及HDI America负责人引语说明，该公司生产汽车座椅泡沫垫、头枕、扶手等部件；新厂位于Metter-Candler I-16工业园，计划2028年全面运营。上述投资、就业与投产时间均为当时规划，不代表工厂已建成或已经实现量产交付。",
+    "category": "发泡",
+    "relatedCategories": ["核心件", "整椅"],
+    "aiRelation": "adjacent",
+    "sourceName": "美国佐治亚州州长办公室",
+    "url": "https://gov.georgia.gov/press-releases/2026-11-17/gov-kemp-hdi-america-invests-47-million-candler-county",
+    "publishedAt": "2026-11-17",
+    "evidenceNote": "佐治亚州州长办公室官方原文标注2026-11-17，明确HDI America为Hyundai Industrial子公司，生产座椅泡沫垫、头枕、扶手等部件，并给出4700万美元投资、约17.5万平方英尺、2028年全面运营及2030年前至少185个岗位的规划。原文未披露AI或机器学习，属于座椅发泡与核心件产能扩张的相邻产业技术/供应链事件；规划数据不外推为已经落地。"
   }
 ]
