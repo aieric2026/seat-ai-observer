@@ -64,5 +64,27 @@
     "url": "https://gov.georgia.gov/press-releases/2026-11-17/gov-kemp-hdi-america-invests-47-million-candler-county",
     "publishedAt": "2026-11-17",
     "evidenceNote": "佐治亚州州长办公室官方原文标注2026-11-17，明确HDI America为Hyundai Industrial子公司，生产座椅泡沫垫、头枕、扶手等部件，并给出4700万美元投资、约17.5万平方英尺、2028年全面运营及2030年前至少185个岗位的规划。原文未披露AI或机器学习，属于座椅发泡与核心件产能扩张的相邻产业技术/供应链事件；规划数据不外推为已经落地。"
+  },
+  {
+    "title": "Lectra以实时KPI与裁剪数据分析支撑汽车内饰新工厂扩产",
+    "summary": "Lectra披露，一家未具名的新设汽车内饰制造商采用Vector Automotive iP6裁剪系统与Algopex数据分析平台，把裁剪精度、产能与实时KPI监控结合，用于材料利用率、设备对标和持续改进。案例称材料节省2%至3%，并改善裁剪室产能与标准化报告；该结果为Lectra客户案例口径，未披露独立验证、样本基线或具体座椅项目。",
+    "category": "面套",
+    "relatedCategories": [],
+    "aiRelation": "enabling",
+    "sourceName": "Lectra",
+    "url": "https://www.lectra.com/en/library/building-a-data-driven-cutting-room-from-day-one",
+    "publishedAt": "2026-11-23",
+    "evidenceNote": "Lectra官方汽车内容列表明确标注Published on November 23, 2026，正文页标注Edited on November 23, 2026；正文确认汽车内饰制造商使用Vector Automotive iP6与Algopex进行实时KPI监控、资产对标和数据驱动改进。原文未出现AI或机器学习，也未说明专用于座椅面套，因此归为汽车内饰裁剪与智能制造的数据化基础；2%至3%材料节省为企业客户案例数据，不外推为其他工厂可复制收益。"
+  },
+  {
+    "title": "Leggett Dynamics获印度车企气动按摩座椅项目：以顺序充气实现分区支撑",
+    "summary": "Leggett Dynamics宣布，在印度市场获得一家未具名主机厂的气动按摩系统项目。系统通过顺序控制的充气腔体沿人体肌肉分布，为上下背部提供可调支撑；公司称方案结合区域工程、本地化生产与本地供应。原文未披露车型、项目金额、供货规模、量产时间或客户验收状态。",
+    "category": "核心件",
+    "relatedCategories": ["整椅", "执行器"],
+    "aiRelation": "enabling",
+    "sourceName": "Leggett Dynamics",
+    "url": "https://leggettdynamics.com/news/leggett-dynamics-accelerates-growth-in-india-with-pneumatic-massage-system-win",
+    "publishedAt": "2026-11-23",
+    "evidenceNote": "Leggett Dynamics官方页面及正文均标注2026-11-23，正文明确Pneumatic Massage System使用sequentially controlled inflatable chambers，为上下背部提供targeted、adjustable support，并说明这是印度市场的一项业务定点。原文未披露AI或机器学习，故仅归为主动舒适与智能座椅的执行基础；business win不等于已经量产交付，客户名称、车型、SOP、数量及验收均未披露。"
   }
 ]
