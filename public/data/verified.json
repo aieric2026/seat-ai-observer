@@ -86,5 +86,27 @@
     "url": "https://leggettdynamics.com/news/leggett-dynamics-accelerates-growth-in-india-with-pneumatic-massage-system-win",
     "publishedAt": "2026-11-23",
     "evidenceNote": "Leggett Dynamics官方页面及正文均标注2026-11-23，正文明确Pneumatic Massage System使用sequentially controlled inflatable chambers，为上下背部提供targeted、adjustable support，并说明这是印度市场的一项业务定点。原文未披露AI或机器学习，故仅归为主动舒适与智能座椅的执行基础；business win不等于已经量产交付，客户名称、车型、SOP、数量及验收均未披露。"
+  },
+  {
+    "title": "Brills在DYA座椅产线部署AI视觉终检：识别面套缺陷、漏件与错装",
+    "summary": "Brills披露，其为韩国整椅供应商DYA的光州、华城和仁州工厂提供座椅装配、检测与物流机器人方案，2026年已完成或推进17个项目，合计金额46.8亿韩元。终检环节由六轴机器人和视觉相机在10秒内拍摄单个座椅数十处位置，AI识别皮革褶皱、划痕、部件缺失以及颜色或材料错装，结果写入MES形成质量履历。项目仍处于分批交付与验收阶段，金额、节拍及识别能力均为企业披露。",
+    "category": "整椅",
+    "relatedCategories": ["面套", "开关", "控制器"],
+    "aiRelation": "direct",
+    "sourceName": "Brills Corp（企业署名稿，经Public发布）",
+    "url": "https://www.publicnow.com/view/43100F50EB0871FEBEB5503411CE23563112CBC2",
+    "publishedAt": "2026-11-25",
+    "evidenceNote": "Brills企业署名稿标注2026-11-25，正文明确DYA汽车座椅产线、17个项目和46.8亿韩元，并说明六轴机器人与视觉相机拍摄座椅后由AI判定皮革褶皱、划痕、漏件及颜色/材料错装；检测结果接入MES。稿件还把3D视觉形状测量、AI缝制质量分析和更广的物理AI列为后续扩展，因此仅把当前已描述的视觉终检归为直接AI应用，不把未来规划写成已部署；项目仍在交付和验收。"
+  },
+  {
+    "title": "丰田纺织在Woven City验证座椅揺动与生体反应：为舒适空间研发积累长期数据",
+    "summary": "丰田纺织将在Toyota Woven City设置T-RELAB实证空间，把声音、热、光、香气和座椅揺动设备组合在搭载开发装置的座椅与照明环境中，分析各功能与体验者生体反应之间的关系，并观察多功能组合效果。计划实证期为2026年11月30日至2027年3月，重点是生活场景下的持续使用、数据采集和长期观察，所得知识将用于后续产品开发。",
+    "category": "整椅",
+    "relatedCategories": ["核心件", "执行器"],
+    "aiRelation": "enabling",
+    "sourceName": "Toyota Boshoku",
+    "url": "https://www.toyota-boshoku.com/jp/news/261124.php",
+    "publishedAt": "2026-11-24",
+    "evidenceNote": "Toyota Boshoku官方原文标注2026-11-24，明确T-RELAB搭载声音、热、光、香气和座椅揺动开发装置，将分析座椅各功能与生体反应的关系，并在日常使用中持续采集数据和长期观察；实证计划为2026-11-30至2027年3月。原文未披露AI或机器学习，也未报告试验结果或量产应用，因此归为智能座椅舒适研发的数据基础，而非AI应用。"
   }
 ]
